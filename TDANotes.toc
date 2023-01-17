@@ -1,0 +1,9 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {english}{}\relax
+\contentsline {chapter}{\nonumberline Contents}{i}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Introduction to Topology}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Basic concepts and Examples}{1}{section.1.1}%
+\contentsline {mtocsection}{\numberline {1.1}Basic concepts and Examples}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Second Chapter}{3}{chapter.2}%
+\contentsline {part}{\nonumberline Appendix}{4}{part*.5}%
+\contentsline {chapter}{\numberline {A}Some more blindtext}{5}{appendix.A}%

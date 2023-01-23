@@ -185,11 +185,193 @@ Using the previous definition, prove that the open intervals in $\mathbb{R}$ are
 
 \section{Topological Properties}
 
+In mathematics, each research field is conformed by a pair: the objects and the transformations, so we are interested in the properties of the objects that are preserved by the transformations. In the previous section, we introduce topological spaces, that correspond to the objects of topology. Lately, we will introduce the transformations, but now we will present a set of properties of topological spaces that will be of our interest during the study of data.
 
 
+\subsection{Closedness}
+
+We mentioned that topology is the study of spaces using a collection of subsets called: open sets. The first property is to complement the open sets. 
+
+\begin{definition}	
+Given a topological space $(X,\tau)$ and a subset $V$ of $X.$ We said that $V$ is closed if its complement in $X$ is an open set, i.e., $$X\setminus V:= \{x\in X: x\not\in V\}\in \tau.$$
+\end{definition}
+
+Closed sets on a topological space form a key part of topology, they are related to other topological properties and theorems. For example, closed sets are present in (topological) metric spaces to define continuity and compactness (we will see it later). Also, we can find closed sets in the definition of separation properties. 
+
+\begin{example}
+Assume that $X=\{1,3,5,7\}$ with the topology $\tau=\{\varnothing,\{1\},\{5\},\{1,5\},\{1,5,7\},X\}.$ 
+
+In this topological space, the sets $\varnothing, \{1,\},\,\{3,7\},\{3,5,7\}, X,$ are closed sets. Even more, we can enumerate all closed sets of $X.$ 
+ 
+\end{example}
+
+Note that, in a topological space, some sets could have open and closed properties. In the previous example, $X$ is open and closed at the same time. In the literature, this sets are called \emph{clopen} sets, but on this notes we will not give much attention on these.
+
+\subsection{Connectedness}
+
+As its name indicates, connectedness indicates if a set is made by part or it is a unit. Let detail on this. 
+
+\begin{definition}
+Given a set $V$ of a topological space, a partition of $V$ is a collection of open sets $\{A\}_j$ such that $A_i$
+\end{definition}
+
+\begin{definition}
+Given a set $V$ of a topological space $X,$ we said that $V$ is \emph{not connected} if there exists open sets $A$ and $B,$ such that:
+\begin{enumerate}
+\item $V=A\cup B,$
+\item $A\cap B =\varnothing.$
+\end{enumerate}
+
+On the contrary, if there is no such partition, then we say that $V$ is \emph{connected}
+\end{definition}
+
+\begin{example}
+Assume that $X=\{1,3,5,7\}$ with the topology $\tau=\{\varnothing,\{1\},\{5\},\{1,5\},\{1,5,7\},X\}.$ 
+
+The set $\{1,5\}$ is not connected, because $\{1,5\}=\{1\}\cup\{5\}.$ The sets $\{1\},\{5\},\{1,5,7\}, X$ are connected. 
+\end{example}
+
+\begin{example}
+Assume that $X=\{1,3,5,7\}$ with the discrete topology $\tau=2^X.$ On this topology, $X$ is no longer connected,  because: $$X=\{1\}\cup\{3,5,7\}=\{1,3\}\cup\{5,7\}.$$
+
+In fact, the only connected sets are $\{1\},\{3\},\{5\}$ and $\{7\}.$
+\end{example}
+
+So connectedness of a space depends on the topology of the ambient space. 
+
+\subsubsection{Connected compontents}
+
+Between the connected subspaces of a topological space, there are some that are characteristic of the space. Before we state the definition of connected components, we need to introduce the concept of equivalence relations.
+
+In mathematics, we can relate objects by equivalence relations. In mathematics, a \emph{relation} between two sets $X$ and $Y$ is just a set of ordered pairs $(x,y),$ for example a function is a relation. The ``lower or equal'' ($\leq$) is a relation between real numbers.
+
+\begin{definition}
+An equivalence relation on a set $X,$ denoted by $\sim,$ is a mathematical relation that satisfies:
+\begin{enumerate}
+\item Reflexive: each element is related to itself $$a\sim a.$$
+
+\item Symmetric: if $a$ is related to $b,$ then $b$ is related to $a.$ $$a\sim b\Rightarrow b\sim a.$$
+
+\item Transitivity: if $a$ is related to $b,$ and $b$ is related to $c,$ then $a$ is related to $c.$ $$a\sim b \mbox{ and }b\sim c\Rightarrow a\sim c.$$
+\end{enumerate}
+\end{definition}
+
+What does an equivalence relation imply on a set? Well, given an equivalence relation on a set, we can ``collect'' all interrelated elements in a subset of the ambient set. These collections of interrelated elements are called \emph{equivalence classes} and they produce a partition on the ambient set.
+
+ \begin{definition}
+ Let $X$ be a set with an equivalence relation $\sim.$ We define the equivalence class of $x$ as the set $$[x]:=\{y\in X: y\sim x\}.$$
+ 
+ Given the equivalence relation $[y],$ we say that $y$ is a class representative. 
+ \end{definition}
+ 
+ Examples of equivalence relations can be found in.
+ 
+ We will define an equivalence relation on topological spaces given by connected sets.
+ 
+ \begin{definition}
+ Let $(X,\tau)$ be a topological space. Let $\sim$ defined as follow, $x$ and $y$ are related ($x\sim y$) if and only if there exists a connected subspace of $X$ containing both points. 
+ 
+ The equivalence classes for this equivalence relation are called \emph{Connected components} of $X.$
+ \end{definition}
+ 
+\begin{example}
+Assume that $X=\{1,3,5,7\}$ with the topology $\tau=\{\varnothing,\{1\},\{5\},\{1,5\},\{1,5,7\},X\}.$ 
+
+The unique connected component of $X$ is $X$ itself, and this follows because the space is connected on this topology.
+\end{example}
+
+\begin{example}
+Assume that $X=\{1,3,5,7\}$ with the discrete topology $\tau=2^X.$ On this topology, $X$ is no longer connected, and the connected components are $\{1\},\{3\},\{5\}$ and $\{7\}.$
+\end{example}
+
+\subsubsection{Connectedness on Graphs}
+
+As graphs are an essential part of TDA, we need to understand how it works connectedness over graphs. 
+
+Let $\Gamma=(V, E)$ be a graph, and we will think that there is no distinction between the combinatorial object and the geometric realization. 
+
+\begin{definition}
+We say that $\Gamma$ is \emph{path-connected} if every two points can be joined by a trajectory of continuous edges. 
+\end{definition}
+
+\begin{proposition}	
+Let $\Gamma=(V, E)$ be a path-connected graph, then $\Gamma$ is connected in the graph topology. 
+\end{proposition}
+\begin{proof}
+Assume that $\Gamma$ is not path-connected. Then there exists at least a pair of points that are not connected by a path. 
+\end{proof}
+
+For graphs, the connected components look like subgraphs (subsets that are graphs) that are path-connected.
+
+\begin{example}
+Consider the graph $K_n$ given by $V=\{1,2,\cdots, n\}$ and $E=V\times V.$ By definition, this graph is path-connected for every $n.$ 
+\end{example}
+
+\begin{example}
+Consider the graph given by $V=\{1,2,\cdots, n\}$ and $E$ given by these conditions:
+\begin{itemize}
+\item $(v,u)\in E$ if $u$ and $v$ are even.
+\item $(v,u)\in E$ if $u$ and $v$ are odd.
+\end{itemize}
+
+By its definition, this graph is not path-connected, and it is composed of two connected components.
+\end{example}
+
+\subsection{Compactness}
+
+As you can imagine, the compactness observes if a set can be set 
+
+
+\begin{definition}
+Let $(X,\tau)$ be a topological space and $E$ be a subset. An open cover for $E$ is a collection of open sets of $X,$ $\{U_\alpha\}_{\alpha\in A},$ such that $$E\subset \bigcup_{\alpha\in A} U_\alpha.$$
+\end{definition}
+
+\begin{definition}
+For $(X,\tau)$ and $E$ be a subset. We said that $E$ is \emph{compact} if for every open covering for $E$ there exists a finite cover (finite number of elements) that covers $E.$
+\end{definition}
+
+\begin{example}
+Consider the set of positive integers $X=\mathbb{N}$ with the discrete topology $\tau=2^{\mathbb{N}}.$ Every finite set is compact. 
+
+Also, if $X$ has the co-finite topology, then also every finite set is compact.
+\end{example}
+
+Now, the compactness property seems artificial and that maybe all subsets are compact but this does not happen. In the next section, we will introduce more examples of all properties on metric spaces.
+
+\section{Metric Spaces and Metric Topology}
+
+Metric spaces are an important set of examples for topology, this follows because their metric structure induces a natural topology on them.
+
+\begin{definition}
+Let $X$ be a non-empty set. A \emph{metric} on $X$ is defined as a function $d:X\times X\to \mathbb{R}$ that satisfies:
+\begin{enumerate}
+\item Non degeneracy: $d(p,q)=0$ if and only if $p=q.$
+\item Symmetry: $d(p,q)=d(q,p).$
+\item Triangle inequality: for every $p,q,r\in X,$ $$d(p,q)\leq d(p,r)+d(r,q).$$
+\end{enumerate}
+
+A \emph{metric space} is a pair $(X,d)$ where $d$ is a metric for $X.$
+\end{definition}
+
+\begin{example}
+Let $X=\mathbb{R}$ and $d(x,y)=|x-y|,$ the function given by the absolute value. Then $(X,d)$ is a metric space. The metric $d$ is known as the standard metric on the reals.
+
+We can consider the functions:
+\begin{itemize}
+\item $d_1(x,y)=\left|\ln\left(\frac{x}{y}\right)\right|.$
+
+\item $d_2(x,y)=\frac{|x-y|}{1+|x-y|}.$
+\end{itemize}
+
+Both functions are metrics for $X.$
+\end{example}
+
+\begin{example}
+Let $X=\mathbb{R}^n$ be the set of ordered $n-$tuples of reals. If $x=(x_1,\cdots,x_n)$ and $(y_1,\cdots,y_n),$ then let $$d(x,y)=\sqrt{\sum_{j=1}^n (x_j-y_j)^2}$$ this function makes $X$ a metric space, and it is known as the $\ell_2-$metric.
+\end{example}
 %\chapter{Second Chapter}
 %
-%\appendix % From here on wards, chapters are numbered with letters, as is the appendix convention
+%\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 %
 %\pagelayout{wide} % No margins
 %\addpart{Appendix}

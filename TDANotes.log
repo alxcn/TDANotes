@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  16 JAN 2023 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  22 JAN 2023 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2718,20 +2718,6 @@ LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
 (Font)              scaled to size 7.08101pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
 (Font)              scaled to size 5.335pt on input line 60.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.82501pt on input line 60.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 60.
-LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 11.64001pt on input line 60.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/m/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 11.64001pt on input line 60.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/b/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sl' will be
 (Font)              scaled to size 9.70001pt on input line 61.
 \openout4 = `TDANotes.mw'.
@@ -2826,122 +2812,104 @@ l.119 \end{example}
 ] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-\openout4 = `TDANotes.mw'.
-
- [2] (TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-
-chapter 2.
-\openout4 = `TDANotes.mw'.
-
-[3
-
-
-] (TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=456.37979pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
-* \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-part without number
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 22.44386pt on input line 141.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 24.13362pt on input line 141.
-LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 24.13362pt on input line 141.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/m/sc/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 24.13362pt on input line 141.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/b/sc/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
+(Font)              scaled to size 8.73001pt on input line 140.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 8.73001pt on input line 140.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 10.82501pt on input line 159.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 11.64001pt on input line 159.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 11.64001pt on input line 159.
+
+Overfull \hbox (55.46796pt too wide) in paragraph at lines 164--165
+[]\T1/zplLF/m/n/10 (-20) Consider $\OML/npxmi/m/it/10 X \U/npxmia/m/it/10 = \LM
+S/npxsy/m/n/10 f\OT1/zplTLF/m/n/10 0\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 2\O
+ML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 4\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 
+6\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 8\LMS/npxsy/m/n/10 g$ \T1/zplLF/m/n/10
+ (-20) and $\OML/npxmi/m/it/10 ^^\ \U/npxmia/m/it/10 = \LMS/npxsy/m/n/10 fœ\OML
+/npxmi/m/it/10 ; \LMS/npxsy/m/n/10 f\OT1/zplTLF/m/n/10 0\LMS/npxsy/m/n/10 g\OML
+/npxmi/m/it/10 ; \LMS/npxsy/m/n/10 f\OT1/zplTLF/m/n/10 0\OML/npxmi/m/it/10 ; \O
+T1/zplTLF/m/n/10 2\LMS/npxsy/m/n/10 g\OML/npxmi/m/it/10 ; \LMS/npxsy/m/n/10 f\O
+T1/zplTLF/m/n/10 0\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 4\LMS/npxsy/m/n/10 g\
+OML/npxmi/m/it/10 ; \LMS/npxsy/m/n/10 f\OT1/zplTLF/m/n/10 0\OML/npxmi/m/it/10 ;
+ \OT1/zplTLF/m/n/10 2\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 6\LMS/npxsy/m/n/10
+ g\OML/npxmi/m/it/10 ; \LMS/npxsy/m/n/10 f\OT1/zplTLF/m/n/10 0\OML/npxmi/m/it/1
+0 ; \OT1/zplTLF/m/n/10 4\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 6\LMS/npxsy/m/n
+/10 g\OML/npxmi/m/it/10 ; X\LMS/npxsy/m/n/10 g\OML/npxmi/m/it/10 :$
+ []
+
 \openout4 = `TDANotes.mw'.
 
-[4
-
-
-
-] (TDANotes.mw)
+[2] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=304.44289pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
-* \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=135.71892pt
-* \marginparsep=17.6406pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-chapter A.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 10.0pt on input line 176.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.3pt on input line 176.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 5.5pt on input line 176.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 9.0pt on input line 178.
 \openout4 = `TDANotes.mw'.
 
-[5
+ [3] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [4] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [5] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 298.
+\openout4 = `TDANotes.mw'.
 
 
+[6] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
 
-] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+ [7] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
  (TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3038,32 +3006,34 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 60918 strings out of 475389
- 1265150 string characters out of 2775112
- 2448612 words of memory out of 3000000
- 81101 multiletter control sequences out of 15000+600000
- 565704 words of font info for 175 fonts, out of 8000000 for 9000
+ 61077 strings out of 475389
+ 1267762 string characters out of 2775112
+ 2452272 words of memory out of 3000000
+ 81134 multiletter control sequences out of 15000+600000
+ 561704 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,19n,159p,10606b,2161s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 133i,20n,159p,10606b,2107s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
 cth-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/n
 ewtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/en
 c/dvips/newtx/ntx-ec-lf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/f
-onts/enc/dvips/newtx/ntx-ec-lf-pc.enc}{C:/Users/L03088338/AppData/Local/Program
-s/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088
-338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users
-/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:
-/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb
-.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
-/txexs.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/newpx/zplri.pfb>
-Output written on TDANotes.pdf (8 pages, 189772 bytes).
+onts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088338/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users/L03088338
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:/Users/L03
+088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/U
+sers/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb
+><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txm
+iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/txfonts/txsya.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on TDANotes.pdf (10 pages, 241330 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 44245 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 36557 words of extra memory for PDF output out of 42996 (max. 10000000)
 

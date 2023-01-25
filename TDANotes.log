@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  24 JAN 2023 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  25 JAN 2023 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2333,19 +2333,12 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
  (TDANotes.aux)
-Runaway argument?
-{\contentsline {example}{\ifthmt@listswap Example~1.2.7\else \nu 
-! File ended while scanning use of \@writefile.
-<inserted text> 
-                \par 
-l.21 \begin{document}
-                     
-? 
 \openout1 = `TDANotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 21.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  21.
+
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
@@ -2711,6 +2704,14 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 20.11783pt on input line 60.
 Package tocbasic Info: character protrusion at toc deactivated on input line 60
 .
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.08101pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 5.335pt on input line 60.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sl' will be
 (Font)              scaled to size 9.70001pt on input line 61.
 \openout4 = `TDANotes.mw'.
@@ -2784,16 +2785,8 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 13.968pt on input line 87.
 LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
 (Font)              scaled to size 9.70001pt on input line 90.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 90.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 90.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 91.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 91.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 91.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
 t line 105.
 
@@ -2892,8 +2885,59 @@ input line 288.
  [9] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 486.
+\openout4 = `TDANotes.mw'.
 
-(TDANotes.aux
+
+[10] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 14.4pt on input line 539.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 10.5pt on input line 539.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.9pt on input line 539.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 539.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\px@BbbR' on input line 539.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 539.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 539.
+
+\openout4 = `TDANotes.mw'.
+
+[11] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+ (TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3048,13 +3092,13 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61142 strings out of 475389
- 1268971 string characters out of 2775112
- 2452095 words of memory out of 3000000
- 81127 multiletter control sequences out of 15000+600000
- 563687 words of font info for 228 fonts, out of 8000000 for 9000
+ 61193 strings out of 475389
+ 1270114 string characters out of 2775112
+ 2453609 words of memory out of 3000000
+ 81142 multiletter control sequences out of 15000+600000
+ 566280 words of font info for 239 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10606b,1812s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 133i,20n,159p,10606b,2107s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
 cth-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/n
 ewtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/en
@@ -3073,9 +3117,9 @@ iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on TDANotes.pdf (12 pages, 256318 bytes).
+Output written on TDANotes.pdf (14 pages, 271421 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 36557 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
+ 36565 words of extra memory for PDF output out of 42996 (max. 10000000)
 

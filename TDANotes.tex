@@ -471,11 +471,62 @@ Let $(\mathbb{R},d)$ where $d$ is the euclidean metric. The set $Q=\left\{\frac{
 Note that even if the diameter of $Q$ is 1, the set is not closed because does not contain its limit point. 
 \end{example}
 
-In the particular case of $\mathbb{R}^n$ with the euclidean metric, closed and bounded means compact. Since we 
-
 \begin{proposition}
+\label{C1:P1:CompactClosedBounded}
 Let $X=\mathbb{R}^n$ and $d$ the standard metric. A subset $Q\subset \mathbb{R}^n$ is compact if and only if it is bounded and closed.
 \end{proposition}
+
+\begin{example}
+Let $Q=\left\{\frac{1}{n}: n\in\mathbb{N}\right\}.$ In the previous example, we said that $Q$ is bounded but it is not closed. Therefore, from the previous proposition, $Q$ cannot be compact of $(\mathbb{R},d).$
+\end{example}
+
+Therefore, Proposition \ref{C1:P1:CompactClosedBounded} proposes a way to check if a set can be compact. For general metric spaces, the other direction of the proposition does not follow so easily, we need extra conditions on the metric space and these conditions are beyond the intentions of these notes. In the particular case of $\mathbb{R}^n$ with the euclidean metric, closed and bounded means compact.
+
+\begin{theorem}
+Let $Q\subset \mathbb{R}^n$ where $\mathbb{R}^n$ has the euclidean metric. Then $Q$ is compact if and only if it is closed and bounded.
+\end{theorem}
+
+The previous Theorem implies that whenever we look at a data set as a finite collection of points in some $\mathbb{R}^n,$ these sets are compact because they are bounded and closed.
+
+You may ask, what happens with compactness in the case of metric graphs? Well, if the graph has finite vertices and its geometrization belongs to some $\mathbb{R}^n,$ then the graph is compact for the metric graph. But if the graph has infinite vertices, then this is another story, we need to be careful about how its metric is defined to determine if it is compact or not.
+
+How we can infer the topological properties of a data universe via a data set? Well, a data set is a sample of a bigger space of information. If we look, for example, that in our sample (observations) there is some accumulation, then we can infer that close in that region we have accumulation points and the data universe could contain a closed subset which is not a finite set of points.
+
+\subsection{Connected sets}
+
+There is no particular change in the definition of connected sets in metric spaces, but limit points can be helpful when we look for a partition.
+
+\begin{definition}
+A point set $Q\in (X,d)$ is said to be disconnected if $Q$ admits a partition into two disjoint non-empty sets $U$ and $V$ so that there is no point in $U$ that is a limit point of $V$ and no point in $V$ that is a limit point of $U.$
+\end{definition}
+
+\begin{example}
+The set $Q=\{\frac{1}{n}:n\in\mathbb{N}\}$ is disconnected in $(\mathbb{R},d).$
+\end{example}
+
+\begin{example}
+The following sets are connected in $(\mathbb{R}^2,d):$
+
+\begin{itemize}
+\item A punctured ball centered at cero: $B_d(0,r)\setminus\{0\}.$
+
+\item An anular region centered at cero: $B_d(0,r_1)\setminus B_d(0,r_2).$
+
+\item An ball region without several regions removed:
+\end{itemize}
+\end{example}
+
+\begin{theorem}
+Let $(\mathbb{R},d)$ where $d$ is the euclidean metric. Then $[0,1]$ is compact and connected, and $(0,1)$ is connected.
+\end{theorem}
+
+\begin{proof}
+That $[0,1]$ is compact follows from the fact that $[0,1]$ is closed and bounded. The prove that $[0,1]$ and $(0,1)$ are connected are similar. We will do it for $(0,1).$
+
+Let 
+\end{proof}
+
+\section{Special Subsets of $\mathbb{R}^n$}
 %\chapter{Second Chapter}
 %
 %\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention

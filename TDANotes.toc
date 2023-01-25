@@ -26,3 +26,7 @@
 \contentsline {mtocsubsection}{\nonumberline Closed sets}{9}{subsection*.21}%
 \contentsline {subsection}{\nonumberline Compact Sets}{9}{subsection*.23}%
 \contentsline {mtocsubsection}{\nonumberline Compact Sets}{9}{subsection*.23}%
+\contentsline {subsection}{\nonumberline Connected sets}{10}{subsection*.25}%
+\contentsline {mtocsubsection}{\nonumberline Connected sets}{10}{subsection*.25}%
+\contentsline {section}{\numberline {1.4}Special Subsets of $\vvmathbb {R}^n$}{11}{section.1.4}%
+\contentsline {mtocsection}{\numberline {1.4}Special Subsets of $\vvmathbb {R}^n$}{11}{section.1.4}%

@@ -17,7 +17,7 @@
 
 \graphicspath{{images/}{./}} % Paths where images are looked for
 
-\makeindex[columns=3, title=Alphabetical Index, intoc]
+%\makeindex[columns=3, title=Alphabetical Index, intoc]
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ Topology is the study of properties that are preserved under continuous function
 \begin{definition}[Topological Space]
 Let $X$ be a set and $\tau$ a collection of subsets of $X.$ We say that $\tau$ is a \emph{topology} for $X$ is it satisfies:
 \begin{enumerate}
-\item If the total and the empty set belong to $\tau.$  $$\varnothing, X\in\tau.$$
+\item If the total and the empty set belong to $\tau.$ $$\varnothing, X\in\tau.$$
 
 \item For every subcollection of elements of $\tau,$ let say $\{U_\alpha\}_{\alpha\in A},$ we have that its union is an element of $\tau.$ $$\bigcup_{\alpha \in U} U_\alpha \in \tau.$$
 
@@ -127,7 +127,7 @@ Let $X=\{1,3,5,7\}$ and consider the collections
 \tau_2 &=& \{\varnothing, \{1\},\{3\},\{7\},\{1,3\},\{1,7\},\{3,7\},\{1,3,7\},X\}.
 \end{eqnarray*}
 
-Both $(X,\tau_1)$ and $(X,\tau_2)$ are topological spaces but they are not the same space. For example, the open set $\{1,5\}$ is not part of $(X,\tau_2)$ and $\{1,3\}$  is not part of $(X,\tau_1).$ 
+Both $(X,\tau_1)$ and $(X,\tau_2)$ are topological spaces but they are not the same space. For example, the open set $\{1,5\}$ is not part of $(X,\tau_2)$ and $\{1,3\}$ is not part of $(X,\tau_1).$ 
 
 Therefore in order to obtain the same topological space we need to find exactly the same open sets in both topologies.
 \end{example}
@@ -140,19 +140,16 @@ A \emph{graph} is a combinatorial object that consists of two sets:
 \item $V$ called vertices, and usually you can consider it as a set of points.
 \item $E$ called edges, it is a subset of $V\times V$ (pairs of elements in $V$). This set describes how to vertices are related.
 \end{itemize}
- 
- Usually, graphs are denoted as $\Gamma=(V, E).$ Given a graph, you can associate a geometric object as a set of points in $\mathbb{R}^n$ in identification with $V$ and lines joining this set of points with the information of $E.$ This geometric object is called the \emph{geometric realization}.
- 
+Usually, graphs are denoted as $\Gamma=(V, E).$ Given a graph, you can associate a geometric object as a set of points in $\mathbb{R}^n$ in identification with $V$ and lines joining this set of points with the information of $E.$ This geometric object is called the \emph{geometric realization}.
 % \begin{figure}[h]
- %put examples of graphs 
- %\end{figure}
- 
- For example, we can consider the graph $\Gamma$ given by $V=\{a,b,c,d\}$ and $E=\{(a,d),(b,d),(c,d)\}.$ Its geometric realization is a tripod in the plane. If we consider the collections
- \begin{eqnarray*}
- T_1 & =& \{\{(a,d)\},\{(b,d)\},\{(c,d)\}\} \\
- T_2 & = &\{\{(a,d),a\},\{(b,d),b\},\{(c,d),c\},\{(a,d),(b,d),(c,d),d\}\}
- \end{eqnarray*}
- The collection $\tau=2^{T_1\cup T_2}$ is a topology for $\Gamma.$ Later we will see that this topology is related to the metric space structure on the graph.
+%put examples of graphs 
+%\end{figure}
+For example, we can consider the graph $\Gamma$ given by $V=\{a,b,c,d\}$ and $E=\{(a,d),(b,d),(c,d)\}.$ Its geometric realization is a tripod in the plane. If we consider the collections
+\begin{eqnarray*}
+T_1 & =& \{\{(a,d)\},\{(b,d)\},\{(c,d)\}\} \\
+T_2 & = &\{\{(a,d),a\},\{(b,d),b\},\{(c,d),c\},\{(a,d),(b,d),(c,d),d\}\}
+\end{eqnarray*}
+The collection $\tau=2^{T_1\cup T_2}$ is a topology for $\Gamma.$ Later we will see that this topology is related to the metric space structure on the graph.
 \end{example}
 
 \subsection{Exercises:}
@@ -192,7 +189,7 @@ In mathematics, each research field is conformed by a pair: the objects and the 
 
 We mentioned that topology is the study of spaces using a collection of subsets called: open sets. The first property is to complement the open sets. 
 
-\begin{definition}	
+\begin{definition} 
 Given a topological space $(X,\tau)$ and a subset $V$ of $X.$ We said that $V$ is closed if its complement in $X$ is an open set, i.e., $$X\setminus V:= \{x\in X: x\not\in V\}\in \tau.$$
 \end{definition}
 
@@ -202,7 +199,6 @@ Closed sets on a topological space form a key part of topology, they are related
 Assume that $X=\{1,3,5,7\}$ with the topology $\tau=\{\varnothing,\{1\},\{5\},\{1,5\},\{1,5,7\},X\}.$ 
 
 In this topological space, the sets $\varnothing, \{1,\},\,\{3,7\},\{3,5,7\}, X,$ are closed sets. Even more, we can enumerate all closed sets of $X.$ 
- 
 \end{example}
 
 Note that, in a topological space, some sets could have open and closed properties. In the previous example, $X$ is open and closed at the same time. In the literature, this sets are called \emph{clopen} sets, but on this notes we will not give much attention on these.
@@ -232,7 +228,7 @@ The set $\{1,5\}$ is not connected, because $\{1,5\}=\{1\}\cup\{5\}.$ The sets $
 \end{example}
 
 \begin{example}
-Assume that $X=\{1,3,5,7\}$ with the discrete topology $\tau=2^X.$ On this topology, $X$ is no longer connected,  because: $$X=\{1\}\cup\{3,5,7\}=\{1,3\}\cup\{5,7\}.$$
+Assume that $X=\{1,3,5,7\}$ with the discrete topology $\tau=2^X.$ On this topology, $X$ is no longer connected, because: $$X=\{1\}\cup\{3,5,7\}=\{1,3\}\cup\{5,7\}.$$
 
 In fact, the only connected sets are $\{1\},\{3\},\{5\}$ and $\{7\}.$
 \end{example}
@@ -258,22 +254,16 @@ An equivalence relation on a set $X,$ denoted by $\sim,$ is a mathematical relat
 
 What does an equivalence relation imply on a set? Well, given an equivalence relation on a set, we can ``collect'' all interrelated elements in a subset of the ambient set. These collections of interrelated elements are called \emph{equivalence classes} and they produce a partition on the ambient set.
 
- \begin{definition}
- Let $X$ be a set with an equivalence relation $\sim.$ We define the equivalence class of $x$ as the set $$[x]:=\{y\in X: y\sim x\}.$$
- 
- Given the equivalence relation $[y],$ we say that $y$ is a class representative. 
- \end{definition}
- 
- Examples of equivalence relations can be found in.
- 
- We will define an equivalence relation on topological spaces given by connected sets.
- 
- \begin{definition}
- Let $(X,\tau)$ be a topological space. Let $\sim$ defined as follow, $x$ and $y$ are related ($x\sim y$) if and only if there exists a connected subspace of $X$ containing both points. 
- 
- The equivalence classes for this equivalence relation are called \emph{Connected components} of $X.$
- \end{definition}
- 
+\begin{definition}
+Let $X$ be a set with an equivalence relation $\sim.$ We define the equivalence class of $x$ as the set $$[x]:=\{y\in X: y\sim x\}.$$
+Given the equivalence relation $[y],$ we say that $y$ is a class representative. 
+\end{definition}
+Examples of equivalence relations can be found in.
+We will define an equivalence relation on topological spaces given by connected sets.
+\begin{definition}
+Let $(X,\tau)$ be a topological space. Let $\sim$ defined as follow, $x$ and $y$ are related ($x\sim y$) if and only if there exists a connected subspace of $X$ containing both points. 
+The equivalence classes for this equivalence relation are called \emph{Connected components} of $X.$
+\end{definition}
 \begin{example}
 Assume that $X=\{1,3,5,7\}$ with the topology $\tau=\{\varnothing,\{1\},\{5\},\{1,5\},\{1,5,7\},X\}.$ 
 
@@ -294,7 +284,7 @@ Let $\Gamma=(V, E)$ be a graph, and we will think that there is no distinction b
 We say that $\Gamma$ is \emph{path-connected} if every two points can be joined by a trajectory of continuous edges. 
 \end{definition}
 
-\begin{proposition}	
+\begin{proposition} 
 Let $\Gamma=(V, E)$ be a path-connected graph, then $\Gamma$ is connected in the graph topology. 
 \end{proposition}
 \begin{proof}
@@ -314,12 +304,12 @@ Consider the graph given by $V=\{1,2,\cdots, n\}$ and $E$ given by these conditi
 \item $(v,u)\in E$ if $u$ and $v$ are odd.
 \end{itemize}
 
-By its definition, this graph is not path-connected, and it is composed of two connected components.
+By its definition, this graph is not path-connected and is composed of two connected components.
 \end{example}
 
 \subsection{Compactness}
 
-As you can imagine, the compactness observes if a set can be set 
+As you can imagine, compactness observes if the set's elements are sort of close together.  
 
 
 \begin{definition}
@@ -338,6 +328,25 @@ Also, if $X$ has the co-finite topology, then also every finite set is compact.
 
 Now, the compactness property seems artificial and that maybe all subsets are compact but this does not happen. In the next section, we will introduce more examples of all properties on metric spaces.
 
+\subsection{Exercises:}
+
+\begin{enumerate}
+
+\item Let $X$ be a non-empty set with the discrete topology. Prove that for the topological space $(X,2^X),$ the only connected components of $X$ are singletons (sets with a unique element). $\star$
+
+\item Is it true that for any non-empty set $X,$ with the trivial topology, is connected? Elaborate on your answer. 
+
+\item Construct an example of a disconnected $X$ with only three connected components.
+
+\item Construct an example of a graph with $n$ vertices that is connected but it is not the graph $K_n.$
+
+\item Let $X=\mathbb{Z}$ give a topology on $X$ such that has two connected components. 
+
+\item Is it true that for any non-empty set $X,$ with the trivial topology, is compact? Elaborate on your answer. 
+
+\item Prove that $X=\mathbb{Z}$ with the discrete topology is not compact. (\emph{Hint: Try to construct an open covering on } $\mathbb{Z}$) $\star$
+\end{enumerate}
+
 \section{Metric Spaces and Metric Topology}
 
 Metric spaces are an important set of examples for topology, this follows because their metric structure induces a natural topology on them.
@@ -352,7 +361,6 @@ Let $X$ be a non-empty set. A \emph{metric} on $X$ is defined as a function $d:X
 
 A \emph{metric space} is a pair $(X,d)$ where $d$ is a metric for $X.$
 \end{definition}
-
 \begin{example}
 Let $X=\mathbb{R}$ and $d(x,y)=|x-y|,$ the function given by the absolute value. Then $(X,d)$ is a metric space. The metric $d$ is known as the standard metric on the reals.
 
@@ -368,7 +376,106 @@ Both functions are metrics for $X.$
 
 \begin{example}
 Let $X=\mathbb{R}^n$ be the set of ordered $n-$tuples of reals. If $x=(x_1,\cdots,x_n)$ and $(y_1,\cdots,y_n),$ then let $$d(x,y)=\sqrt{\sum_{j=1}^n (x_j-y_j)^2}$$ this function makes $X$ a metric space, and it is known as the $\ell_2-$metric.
+
+Similarly to the dimension one ($\mathbb{R}$), there are more than one metric on $\mathbb{R}^n,$ for example:
+
+\begin{itemize}
+\item The $\ell_\infty$ norm: $$d(x,y)=\max_{j=1,\cdots,n} \{|x_j-y_j|\}.$$
+
+\item The $\ell_1$ norm: $$d(x,y)=\sum_{j=1}^n |x_j-y_j|.$$
+
+\item The discrete metric: $$d(x,y)=\delta_{xy}.$$
+\end{itemize}
 \end{example}
+
+The geometry of $\mathbb{R}^n$ changes for different metrics. For example, given a metric space $(X,d),$ a point $x\in X$ and a positive real number $r,$ we can define a special subset of $X,$ this subset is a \emph{ball} centered at $x$ of radius $r$:
+
+$$B_d(x,r):=\left\{y\in X: d(x,y)< r \right\}.$$
+
+You can look for example, at different balls plotted on each geometry in the next figure.
+
+In the next example, we will assume that a graph $\Gamma$ means also its geometric representation in some $\mathbb{R}^n.$
+
+\begin{example}
+Given a graph $\Gamma=(V,E).$ We define the following metric on it. Let $d: V\times V \to \mathbb{R}$ given as follows: for any pair $(u,v),$ the number $d_\Gamma (u,v)$ is the length of the shortest path that joins $u$ and $v,$ and by length we mean the sum of the distance of between the points in a path for a given metric in $\mathbb{R}^n.$
+\end{example}
+
+In the literature, previous metrics on the graph can be uniformized by taking the distance between the vertices to be always one. 
+\subsection{Metric Topology}
+
+The metric space structure on a set $X$ induces a natural topology on it, this topology is known as the \emph{metric topology}. Before we state the description of open sets, we need to understand the concept of the basis for a topology.
+
+\begin{definition}
+Let $X$ be a set, a \emph{basis} for a topology on $X$ is a collection $\mathcal{B}$ of subsets of $X$ (called \emph{base elements}) that satisfies:
+\begin{enumerate}
+\item For each $x\in X,$ there is at least one base element of $B$ such that $x\in B.$
+\item If $x$ belongs to the intersection of two base elements $B_1$ and $B_2,$ then there is a base element $B_3$ containing $x$ such that $$B_3\subset B_1\cap B_2.$$
+\end{enumerate}
+
+If $\mathcal{B}$ satisfies these two conditions, then we define the topology $\tau_{\mathcal{B}}$ generated by $\mathcal{B}$ as follows: A subset $U\subset X$ belongs to $\tau_{\mathcal{B}}$ if for each $x\in U$ there is a base element $B\in\mathcal{B}$ such that $x\in B\subset U.$
+\end{definition}
+
+The previous definition is nothing new, you have seen a similar concept in Complex Calculus when we talked about open subsets and neighborhoods of $\mathbb{C}.$
+
+\begin{definition}
+Let $(X,d)$ be a metric space. Consider the collection $\mathcal{B}_d$ as the set of all balls centered on points of $x$ of any radius. 
+
+The topology on $X$ induced by the basis $\mathcal{B}_d$ is called the \emph{metric topology} on $X.$
+\end{definition}
+
+\begin{example}
+Consider $\mathbb{R}^2$ with the euclidean metric (or standard metric), the basis of the topology $\mathcal{B}_d$ consists of all circular regions on $\mathbb{R}^2.$
+\end{example}
+
+The metric topology is very special because topological properties have a more detailed description here. In what follows, we will describe all topological properties for the metric topology. From now on, when we think of a metric space $(X,d)$ we will think it with the metric topology.
+
+\subsection{Closed sets}
+
+\begin{definition}
+Let $(X,d)$ be a metric space and $Q\in X$ a point set. We say that $q\in X$ is a \emph{limit point} (or \emph{accumulation point}) of $Q$ if for any real number $\varepsilon$ (no matter how small) there exists a point $p\in Q$ different from $q$ such that $$d(q,p)<\varepsilon.$$
+\end{definition}
+
+The previous definition, in topological terms, means that for a limit point $q,$ any ball centered at $q$ always intersects $Q$.
+
+\begin{example}
+Consider the set $(\mathbb{R},d)$ with the standard metric. The set $Q=\left\{\frac{1}{n}: n\in\mathbb{N}\right\},$ the point $0\in\mathbb{R}$ is a limit point for $Q.$ You can see in the next figure you can see a sketch of why.
+\end{example}
+
+\begin{example}
+Consider the set $(\mathbb{R}^2,d)$ with the standard metric. The set $Q=\left\{\left(x,\frac{\sin(x)}{x}\right): x\in(0,\infty)\right\}.$ The point $(0,1)\in \mathbb{R}^2$ is a limit point for $Q.$
+\end{example}
+
+\begin{definition}
+Let $(X,d)$ be a metric space and $Q\in X$ a point set. We call \emph{boundary} of $Q$ to the set of all its limit points, denoted by $\partial Q.$ The \emph{closure} of $Q$ is defined to be the union of $Q$ and its boundary, \emph{i.e.}, $$\overline{Q}=Q\cup \partial Q.$$ 
+
+We say that $Q$ is closed in $X$ if it is equal to its closure: $$Q=\overline{Q}.$$
+\end{definition}
+
+
+\subsection{Compact Sets}
+
+In the metric topology, compact sets have a more intuitive description. On metric spaces,  any compact set has to be closed and bounded, if one of these two properties fails the set cannot be compact. 
+
+\begin{definition}
+Let $Q$ be a subset of a metric space $(X,d).$ The diameter of $Q,$ denoted by $\mbox{\upshape{diam}}(Q),$ is the minimal possible upper-bound for all distances of points of $Q,$ \emph{i.e.}, $$\mbox{\upshape{diam}}(Q):=\sup_{x,y\in Q} d(x,y).$$ The diameter can be a real number or $\infty.$
+\end{definition}
+
+
+\begin{definition}
+Let $Q$ be a subset of a metric space $(X,d).$ We say that $Q$ is \emph{bounded} if its diameter is finite. $$\mbox{\upshape{diam}}(Q)<\infty.$$
+\end{definition}
+
+\begin{example}
+Let $(\mathbb{R},d)$ where $d$ is the euclidean metric. The set $Q=\left\{\frac{1}{n}: n\in\mathbb{N}\right\}$ is not compact. 
+
+Note that even if the diameter of $Q$ is 1, the set is not closed because does not contain its limit point. 
+\end{example}
+
+In the particular case of $\mathbb{R}^n$ with the euclidean metric, closed and bounded means compact. Since we 
+
+\begin{proposition}
+Let $X=\mathbb{R}^n$ and $d$ the standard metric. A subset $Q\subset \mathbb{R}^n$ is compact if and only if it is bounded and closed.
+\end{proposition}
 %\chapter{Second Chapter}
 %
 %\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention

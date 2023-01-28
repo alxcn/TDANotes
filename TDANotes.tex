@@ -384,7 +384,7 @@ Similarly to the dimension one ($\mathbb{R}$), there are more than one metric on
 
 \item The $\ell_1$ norm: $$d(x,y)=\sum_{j=1}^n |x_j-y_j|.$$
 
-\item The discrete metric: $$d(x,y)=\delta_{xy}.$$
+\item The discrete metric: $$d(x,y)=1-\delta_{xy}.$$
 \end{itemize}
 \end{example}
 
@@ -527,6 +527,139 @@ Let
 \end{proof}
 
 \section{Special Subsets of $\mathbb{R}^n$}
+
+In this section, we will present some special topological subspaces of $\mathbb{R}^n$ that will be of our interest during this course. 
+
+\subsection{Balls and Spheres}
+
+As in previous sections, we already stated the importance of balls in the topology of metric spaces, we will recall their definition and topological properties.
+
+\begin{definition}
+An \emph{euclidean ball} of radius $r>0$ and centered at $x_0$ in $\mathbb{R}^n$ is defined as the set $$\mathbb{B}^n:=\{x\in\mathbb{R}^n: d(x,x_0)<r\}.$$
+\end{definition}
+
+Balls are open and connected subspaces of $\mathbb{R}^n,$  but they are not compact. In the next Figure, we pictured balls of radius one centered at zero in dimensions: 1, 2, and 3.
+
+\begin{definition}
+An \emph{euclidean sphere} of radius $r$ and centered at $x_0$ in $\mathbb{R}^n$ is defined as the set $$\mathbb{S}^{n-1}:=\{x\in\mathbb{R}^n: d(x,x_0)=r\}.$$
+\end{definition}
+
+Spheres are closed, connected and compact subspaces of $\mathbb{R}^n.$ Even more, they coincide with the boundary of balls $\mathbb{B}^n.$ In the next Figure, we pictured balls of radius one centered at zero in dimensions: 1, 2, and 3.
+
+\subsection{Simplices}
+
+Simplices will be key for the Homology theory, so we will start our understanding of these subspaces.
+
+\begin{definition}
+A $n-$simplex in $\mathbb{R}^{n+1}$ is defined as the set $$K^n:=\{(x_1,x_2,\cdots, x_n,x_{n+1})\in \mathbb{R}^{n+1}: \sum_{j=1}^{n+1} x_j =1, x_j\geq 0\}.$$
+\end{definition}
+
+In the literature, you may find that simplices are defined as the convex hull of $(n+1)-$linear independent vectors in $\mathbb{R}^{n+1}$ (usually the standard basis of $\mathbb{R}^{n+1}$). Simplices are always connected, compact subspaces of $\mathbb{R}^{n+1}.$ 
+
+\begin{example}
+A $0-$simplex is just the point $x=1$ in $\mathbb{R}.$ A $1-$simplex is a segment of the line joining $(1,0)$ and $(0,1)$ in $\mathbb{R}^2.$ A $2-$simplex is the triangular region in $\mathbb{R}^2$ with vertices at $(0,0,1),\,(0,1,0)$ and $(1,0,0).$ A $3-$simplex is the region in $\mathbb{R}^4$ bounded by a tetrahedron with vertices at $(0,0,0,1),\,(0,0,1,0),\,(0,1,0,0)$ and $(1,0,0,0).$
+
+In the next Figure, we pictured the first 4 simplices.
+\end{example}
+
+In general, a $n-$simplex contains all previous dimension simplices as boundaries. For example, a $2-$simplex has three $1-$simplices and $0-$simplices in its boundary. In the Chapter on Homology theory, we will see how the simplices relate to manifolds (topological subspaces) and what topological properties we can infer from this.
+
+\subsection{Exercises:}
+
+\begin{enumerate}
+
+\item Prove that for $\mathbb{R}^3$ the following is a metric: $$d((x_1,x_2,x_3),(y_1,y_2,y_3))=\max |x_j-y_j|.$$ Also, provide a picture of a ball of radius $r$ centered at $(0,0,0).$
+
+\item Let $(X,d)$ be any metric space. Prove that $$e(x,y)=\frac{d(x,y)}{1+d(x,y)}$$ is a metric for $X$ and $(X,e)$ has finite diameter. $\star$
+
+\item Let $(X,d)$ where $X$ is any non-empty set and $d$ is the discrete metric (\emph{i.e.,} 1 if the points are different and 0 if they are the same). Prove that the metric topology of $(X,d)$ is the discrete topology (or equivalently, that any subset of $(X,d)$ is an open set).
+
+\item Show that the open subsets of $\mathbb{R}\times\{0\}$ as subspace of $\mathbb{R}^2$ (with the standard topology) are of the form $U\times \{0\}$ where $U$ is open for $\mathbb{R}.$ Also, show that none of them are open sets of $\mathbb{R}^2.$
+
+\item Find the interior and boundary of the following subsets of $\mathbb{R}^2.$
+\begin{itemize}
+\item $A=\{(x,y)\in\mathbb{R}^2: y=0\}.$
+\item $B=\{(x,y)\in\mathbb{R}^2: x>0, y\neq 0\}.$
+\item $C=\{(x,y)\in\mathbb{R}^2: 0<y^2-x^2<1\}.$
+\end{itemize}
+
+\item Determine the topological properties of the previous sets.
+
+\item Consider the subset of $S\subset\mathbb{R}^2$ given by $$S:=\left\{\left(\frac{1}{n},\frac{1}{n}\right):n\in\mathbb{N}\right\}.$$ Compute $\overline{S}.$
+
+\item Consider the set $E=([0,1]\times[-1,1]) \setminus \{(1/n,0): n\in\mathbb{N}\}.$ Is $E$ connected? $\star$
+
+
+\end{enumerate}
+
+\section{Special Metric Spaces}
+
+Of course, metric spaces theory is not only the study of $\mathbb{R}^n.$ In this section, we will provide a detailed introduction to other metric spaces that interest us.
+
+\subsection{Hamming Distance and Coding}
+
+
+\subsection{Intrinsic Metric}
+
+
+\section{Quotient spaces and their topology}
+
+
+\section{Homeomorphims}
+
+Now that we have described the objects of Topology theory and their properties, we are interested in the set of transformations of topological spaces and how they interact with the topological properties.
+
+In this section, we are interested in determining why a cube is ``topological equivalent'' to a sphere; intuitively, if our cube is made of a soft and malleable material, we can deform it into a sphere with ``continuous'' motions (no cuttings or gluing extra pieces). Therefore, for topologists studying the cube and the sphere represent the same, because their topologies are the same. 
+
+How can we define this equivalence on topologies more formally? Well, we need to work to open sets and functions between spaces. Note that in the case of a cube in $\mathbb{R}^3$ for its (subspace) topology, the open sets look like disks, a bent disk or a cone-shaped disk, but at the end, if we flatten up all these open sets they look like disks. The open sets of a 2-sphere in $\mathbb{R}^3,$ for its (subspace) topology, look like curved disks and again if we flatten them up, they are just disks. Therefore, the topologies are the same. The function that makes the topological equivalence, is the composition of the two flattened-up processes. The functions that preserve open sets (send open sets to open sets) are called \emph{continuous} functions. 
+
+\begin{definition}
+A function $f$ between topological spaces $(X,\tau_X)$ and $(Y,\tau_Y)$ is said to be \emph{continuous} if for every open set $U\subset Y$ then $f^{-1}(U)$ is an open set in $(X,\tau_X).$
+\end{definition}
+
+In the literature, you may find that continuous functions between topological spaces are also called \emph{maps} or \emph{morphisms}. 
+
+\begin{example}
+Consider the topological spaces $(\mathbb{N},2^{\mathbb{N}})$ and $(2\mathbb{N},\tau)$ where $2\mathbb{N}$ is the set of even positive integers and $\tau$ is the trivial topology. Let $f:(\mathbb{N},2^{\mathbb{N}})\to (2\mathbb{N},\tau)$ given by $f(x)=2x.$
+
+The function $f$ is continuous. Let see, for $(2\mathbb{N},\tau)$ there are only two open sets: $\varnothing$ and $2\mathbb{N}$ itself. 
+
+First, $f^{-1}(\varnothing)=\varnothing$ since there is no element in $\varnothing,$ therefore $f^{-1}(\varnothing)$ is an open set in $(\mathbb{N},2^{\mathbb{N}}).$ For the case $f^{-1}(2\mathbb{N})$ note that for every element in $n\in 2\mathbb{N}$ we have that $\frac{n}{2}\in\mathbb{N}$.Therefore $f^{-1}(2\mathbb{N})=\mathbb{N}$ which is also an open set in $(\mathbb{N},2^{\mathbb{N}}).$
+
+Therefore, the function $f(x)=2x$ is continuous in these topological spaces.
+\end{example}
+
+The continuity property of a function depends on the topologies of the domain and co-domain. For some topologies, a function could be continuous but if we change the topologies on these spaces the continuity fails.
+
+\begin{example}
+Consider again the function $f(x)=2x,$ but now between $(\mathbb{N},\tau)$ (with $\tau$ the trivial topology) and $(2\mathbb{N},2^{2\mathbb{N}}).$ For these topologies, the function $f$ is no longer continuous. Let $\{2,4\}\in 2^{2\mathbb{N}},$ this is an open set for $2\mathbb{N}$ and $f^{-1}(\{2,4\})=\{1,2\}$ which is not an open set in $(\mathbb{N},\tau).$ Since the continuity conditions fail for one open set, the function $f$ cannot be continuous.  
+\end{example}
+
+In order to give an equivalence relation between topological spaces we need that if $X$ is related to $Y,$ then $Y$ should be related to $X.$ The next definition, we will define the equivalence relation.
+
+\begin{definition}
+Let $(X,\tau_X)$ and $(Y,\tau_Y).$ An \emph{homeomorphism} is a bijective function $$h:(X,\tau_X)\to (Y,\tau_Y)$$ which is continuous and its inverse too.
+
+If there exists a homeomorphism between $(X,\tau_X)$ and $(Y,\tau_Y),$ then we say that $(X,\tau_X)$ and $(Y,\tau_Y)$ are \emph{topological equivalent}.
+\end{definition}
+
+\begin{proposition}
+Topological equivalence between topological spaces is an equivalence relation.
+\end{proposition}
+\begin{proof}
+Note that for any topological space $(X,\tau),$ the identity map is continuous and its inverse is also the identity map. Therefore $(X,\tau)$ is topological equivalent to itself.
+
+If $(X,\tau_X)$ is topological equivalent to $(Y,\tau_Y),$ then there exists a homeomorphism  $h:(X,\tau_X)\to (Y,\tau_Y).$ Note that if $h$ is a homeomorphism then $h^{-1}$ is it too. Therefore topological equivalence is symmetric.
+
+If $(X,\tau_X)$ is topological equivalent to $(Y,\tau_Y),$ and $(Y,\tau_Y)$ to $(Z,\tau_Z).$ Then there are homeomorphisms $f$ and $g.$ Note that $g\circ f:(X,\tau_X)\to(Z,\tau_Z)$ is also a homeomorphism. Therefore, topological equivalence is transitive.
+\end{proof}
+
+\begin{example}
+Consider the sets $\mathbb{N}$ and $2\mathbb{N}$ both the discrete topology. The map $f(n)=2n$ is a homeomorphism. Early, we saw that $f$ is continuous. 
+
+Note that $f^{-1}(m)=\frac{m}{2}$ is also continuous.
+\end{example}
+
 %\chapter{Second Chapter}
 %
 %\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention

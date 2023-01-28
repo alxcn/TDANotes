@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  25 JAN 2023 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  26 JAN 2023 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2894,34 +2894,114 @@ t line 486.
 \openout4 = `TDANotes.mw'.
 
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 14.4pt on input line 539.
+(Font)              scaled to size 14.4pt on input line 530.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.5pt on input line 539.
+(Font)              scaled to size 10.5pt on input line 530.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.9pt on input line 539.
+(Font)              scaled to size 7.9pt on input line 530.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 539.
+(hyperref)                removing `math shift' on input line 530.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\px@BbbR' on input line 539.
+(hyperref)                removing `\px@BbbR' on input line 530.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 539.
+(hyperref)                removing `superscript' on input line 530.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 539.
+(hyperref)                removing `math shift' on input line 530.
 
 \openout4 = `TDANotes.mw'.
 
 [11] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
- (TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+ [12] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [13] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [14] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+
+(TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3092,11 +3172,11 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61193 strings out of 475389
- 1270114 string characters out of 2775112
- 2453609 words of memory out of 3000000
- 81142 multiletter control sequences out of 15000+600000
- 566280 words of font info for 239 fonts, out of 8000000 for 9000
+ 61260 strings out of 475389
+ 1271448 string characters out of 2775112
+ 2454737 words of memory out of 3000000
+ 81145 multiletter control sequences out of 15000+600000
+ 567081 words of font info for 246 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,159p,10606b,2107s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
@@ -3117,9 +3197,9 @@ iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on TDANotes.pdf (14 pages, 271421 bytes).
+Output written on TDANotes.pdf (17 pages, 300715 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
- 36565 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 36589 words of extra memory for PDF output out of 42996 (max. 10000000)
 

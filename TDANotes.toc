@@ -30,3 +30,19 @@
 \contentsline {mtocsubsection}{\nonumberline Connected sets}{10}{subsection*.25}%
 \contentsline {section}{\numberline {1.4}Special Subsets of $\vvmathbb {R}^n$}{11}{section.1.4}%
 \contentsline {mtocsection}{\numberline {1.4}Special Subsets of $\vvmathbb {R}^n$}{11}{section.1.4}%
+\contentsline {subsection}{\nonumberline Balls and Spheres}{11}{subsection*.27}%
+\contentsline {mtocsubsection}{\nonumberline Balls and Spheres}{11}{subsection*.27}%
+\contentsline {subsection}{\nonumberline Simplices}{11}{subsection*.29}%
+\contentsline {mtocsubsection}{\nonumberline Simplices}{11}{subsection*.29}%
+\contentsline {subsection}{\nonumberline Exercises:}{12}{subsection*.31}%
+\contentsline {mtocsubsection}{\nonumberline Exercises:}{12}{subsection*.31}%
+\contentsline {section}{\numberline {1.5}Special Metric Spaces}{13}{section.1.5}%
+\contentsline {mtocsection}{\numberline {1.5}Special Metric Spaces}{13}{section.1.5}%
+\contentsline {subsection}{\nonumberline Hamming Distance and Coding}{13}{subsection*.33}%
+\contentsline {mtocsubsection}{\nonumberline Hamming Distance and Coding}{13}{subsection*.33}%
+\contentsline {subsection}{\nonumberline Intrinsic Metric}{13}{subsection*.35}%
+\contentsline {mtocsubsection}{\nonumberline Intrinsic Metric}{13}{subsection*.35}%
+\contentsline {section}{\numberline {1.6}Quotient spaces and their topology}{13}{section.1.6}%
+\contentsline {mtocsection}{\numberline {1.6}Quotient spaces and their topology}{13}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Homeomorphims}{13}{section.1.7}%
+\contentsline {mtocsection}{\numberline {1.7}Homeomorphims}{13}{section.1.7}%

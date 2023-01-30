@@ -526,6 +526,33 @@ That $[0,1]$ is compact follows from the fact that $[0,1]$ is closed and bounded
 Let 
 \end{proof}
 
+\subsection{Exercises:}
+
+\begin{enumerate}
+
+\item Prove that for $\mathbb{R}^3$ the following is a metric: $$d((x_1,x_2,x_3),(y_1,y_2,y_3))=\max |x_j-y_j|.$$ Also, provide a picture of a ball of radius $r$ centered at $(0,0,0).$
+
+\item Let $(X,d)$ be any metric space. Prove that $$e(x,y)=\frac{d(x,y)}{1+d(x,y)}$$ is a metric for $X$ and $(X,e)$ has finite diameter. $\star$
+
+\item Let $(X,d)$ where $X$ is any non-empty set and $d$ is the discrete metric (\emph{i.e.,} 1 if the points are different and 0 if they are the same). Prove that the metric topology of $(X,d)$ is the discrete topology (or equivalently, that any subset of $(X,d)$ is an open set).
+
+\item Show that the open subsets of $\mathbb{R}\times\{0\}$ as subspace of $\mathbb{R}^2$ (with the standard topology) are of the form $U\times \{0\}$ where $U$ is open for $\mathbb{R}.$ Also, show that none of them are open sets of $\mathbb{R}^2.$
+
+\item Find the interior and boundary of the following subsets of $\mathbb{R}^2.$
+\begin{itemize}
+\item $A=\{(x,y)\in\mathbb{R}^2: y=0\}.$
+\item $B=\{(x,y)\in\mathbb{R}^2: x>0, y\neq 0\}.$
+\item $C=\{(x,y)\in\mathbb{R}^2: 0<y^2-x^2<1\}.$
+\end{itemize}
+
+\item Determine the topological properties of the previous sets.
+
+\item Consider the subset of $S\subset\mathbb{R}^2$ given by $$S:=\left\{\left(\frac{1}{n},\frac{1}{n}\right):n\in\mathbb{N}\right\}.$$ Compute $\overline{S}.$
+
+\item Consider the set $E=([0,1]\times[-1,1]) \setminus \{(1/n,0): n\in\mathbb{N}\}.$ Is $E$ connected? $\star$
+
+\end{enumerate}
+
 \section{Special Subsets of $\mathbb{R}^n$}
 
 In this section, we will present some special topological subspaces of $\mathbb{R}^n$ that will be of our interest during this course. 
@@ -564,33 +591,7 @@ In the next Figure, we pictured the first 4 simplices.
 
 In general, a $n-$simplex contains all previous dimension simplices as boundaries. For example, a $2-$simplex has three $1-$simplices and $0-$simplices in its boundary. In the Chapter on Homology theory, we will see how the simplices relate to manifolds (topological subspaces) and what topological properties we can infer from this.
 
-\subsection{Exercises:}
 
-\begin{enumerate}
-
-\item Prove that for $\mathbb{R}^3$ the following is a metric: $$d((x_1,x_2,x_3),(y_1,y_2,y_3))=\max |x_j-y_j|.$$ Also, provide a picture of a ball of radius $r$ centered at $(0,0,0).$
-
-\item Let $(X,d)$ be any metric space. Prove that $$e(x,y)=\frac{d(x,y)}{1+d(x,y)}$$ is a metric for $X$ and $(X,e)$ has finite diameter. $\star$
-
-\item Let $(X,d)$ where $X$ is any non-empty set and $d$ is the discrete metric (\emph{i.e.,} 1 if the points are different and 0 if they are the same). Prove that the metric topology of $(X,d)$ is the discrete topology (or equivalently, that any subset of $(X,d)$ is an open set).
-
-\item Show that the open subsets of $\mathbb{R}\times\{0\}$ as subspace of $\mathbb{R}^2$ (with the standard topology) are of the form $U\times \{0\}$ where $U$ is open for $\mathbb{R}.$ Also, show that none of them are open sets of $\mathbb{R}^2.$
-
-\item Find the interior and boundary of the following subsets of $\mathbb{R}^2.$
-\begin{itemize}
-\item $A=\{(x,y)\in\mathbb{R}^2: y=0\}.$
-\item $B=\{(x,y)\in\mathbb{R}^2: x>0, y\neq 0\}.$
-\item $C=\{(x,y)\in\mathbb{R}^2: 0<y^2-x^2<1\}.$
-\end{itemize}
-
-\item Determine the topological properties of the previous sets.
-
-\item Consider the subset of $S\subset\mathbb{R}^2$ given by $$S:=\left\{\left(\frac{1}{n},\frac{1}{n}\right):n\in\mathbb{N}\right\}.$$ Compute $\overline{S}.$
-
-\item Consider the set $E=([0,1]\times[-1,1]) \setminus \{(1/n,0): n\in\mathbb{N}\}.$ Is $E$ connected? $\star$
-
-
-\end{enumerate}
 
 \section{Special Metric Spaces}
 
@@ -659,6 +660,107 @@ Consider the sets $\mathbb{N}$ and $2\mathbb{N}$ both the discrete topology. The
 
 Note that $f^{-1}(m)=\frac{m}{2}$ is also continuous.
 \end{example}
+
+\begin{example}
+Consider $\mathbb{R}$ with the euclidean metric. Let $f:\mathbb{R}\to\mathbb{R}$ given by $$f(x)=3x+1.$$ From calculus, we know that $f$ is a continuous function (in the calculus sense but it coincides with the metric topology). For example, given a base element for the metric $(a,b),$ then $f\left((a,b)\right)=(3a+1,3b+1)$ this last one is also an open set of $\mathbb{R}.$
+
+Note that $f^{-1}:\mathbb{R}\to\mathbb{R}$ is given by $f^{-1}(y)=\frac{y-1}{3}.$ $f^{-1}$ is also a continuous function, because $f^{-1}\left((a,b)\right)=\left(\frac{a-1}{3},\frac{b-1}{3}\right)$ which is an open set of $\mathbb{R}.$
+\end{example}
+
+\begin{example}
+Let $\mathbb{R}$ with the euclidean metric and consider $(0,\infty)$ with the subspace topology of $\mathbb{R}.$ These two spaces are topological equivalent. Consider the function $f(x)=e^x.$ The function $f$ is bijective, for the following reasons:
+
+\begin{itemize}
+\item \textbf{Injective:} Let $x,y\in \mathbb{R}$ such that $f(x)=f(y),$ from the definition of $f$ we know that $f(x),f(y)\neq 0.$ Therefore $$\frac{f(x)}{f(y)}=e^{x-y}=1$$ and we know that the only solution to that equation is when $x-y=0,$ so $x$ should be equal to $y.$
+
+\item \textbf{Surjective:} Let $y\in(0,\infty),$ and consider the number $x=\ln(y)\in\mathbb{R},$ from calculus we know that $$f(x)=e^{\ln(y)}=y.$$ Therefore, $f$ is surjective.  
+\end{itemize}
+
+The function $f$ is continuous, because $f\left((a,b)\right)$ is $(e^a,e^b)$ which is an open set for $(0,\infty)$ in the subspace topology.
+\end{example}
+
+\begin{example}
+\label{C1:S6:ExampleInversion}
+Consider $\mathbb{R}^2$ with the euclidean metric. Let $X=\mathbb{R}^2\setminus B((0,0),1)$ and $Y=B((0,0),1)\setminus\{(0,0)\}$ with the subspace topology. These spaces are topological equivalents. Consider the function 
+
+\begin{eqnarray*}
+f(x):&B((0,0),1)\setminus\{(0,0)\}\to \mathbb{R}^2\setminus B((0,0),1)\\
+ &(x,y)\mapsto \left(\frac{x}{x^2+y^2},\frac{y}{x^2+y^2}\right)
+\end{eqnarray*}
+
+It is not difficult to prove that the image of any circle is again a circle, therefore for each base element of the subspace topology in $Y$ we have that its image is again a base element in $X$ for the subspace topology.
+
+To see that the function is bijective it suffices to check that every circle of radius $0<r<1$ centered at $(0,0)$ is mapped to a circle with radius $>1$ bijectively. 
+
+We know that every circle centered at $(0,0)$ is parametrized by $$(r\cos\theta,r\sin\theta)\quad \theta\in[0,2\pi)$$ and this parametrization is a bijective map from $[0,2\pi)$ to the circle. Note that $$f\left(r\cos\theta,r\sin\theta\right)=\left(\frac{\cos\theta}{r},\frac{\sin\theta}{r}\right).$$ If $0<r<1,$ then $\frac{1}{r}>1.$ So each circle in $Y$ is mapped to a unique circle in $X.$ The bijective property on $f$ follows from functions properties.
+\end{example}
+
+Finding homeomorphisms between topological spaces is not always possible, but there is a property on continuous functions that allow us to ``approximate'' homeomorphisms.
+
+\begin{definition}[Embedding]
+A function $g:(X,\tau_X)\to (Y,\tau_Y)$ is said to be an \emph{embedding} if it is a continuous injective function.
+\end{definition}
+
+Embeddings allow us to determine when a topological space can be seen as a subspace of another topological space. In particular, embeddings transform into homeomorphisms when we restrict the function to their image (the topological subspace with the subspace topology).
+
+\begin{example}
+\label{C1:S6:Example:Circleembedding}
+In example \ref{C1:S6:ExampleInversion}, we mentionned the function 
+\begin{eqnarray*}
+f(x):&[0,2\pi)\to \mathbb{R}^2\\
+ &\theta \mapsto \left(\cos\theta,\sin\theta\right).
+\end{eqnarray*}
+
+This function is an embedding of $[0,2\pi)$ into $\mathbb{R}^2.$ We already know that this function is continuous and the injective part follows from the fact that functions $\cos$ and $\sin$ are injective on $[0,2\pi).$
+\end{example}
+
+
+Finding homeomorphisms between general topological spaces is quite hard, therefore how do we determine when two topological spaces are equivalent? Well, topological properties (closedness, connectedness, and compactness) help us in this case, it turns out that these topological properties are preserved by homeomorphisms. Checking if the topological spaces present the same properties then it is possible that they are equivalent, but if don't then we know for sure that they are not equivalent. 
+
+\begin{theorem}
+\label{C1:S6:Theorem:Connected}
+The image of a connected space under a continuous map is connected.
+\end{theorem}
+\begin{proof}
+Let $f: X\to Y$ be a continuous map and let $X$ be connected. We wish to prove that the image $Z=f(X)$ is connected. From the fact that $f$ restricted to its image is also continuous, it suffices to prove it for surjective continuous functions $$g: X \to Z.$$ Suppose that $Z=A\cup B$ is a separation for $Z$ into two disjoint nonempty open sets in $Z.$ Since $g$ is continuous, $g^{-1}(A)$ an d$g^{-1}(B)$ are open sets whose union is $X.$ We know that both inverse images are disjoint because $g$ is surjective. Therefore $$X=g^{-1}(A)\cup g^{-1}(B)$$ is a separation for $X.$ Since $X$ is connected, one of the sets is empty, and so it is its image. Therefore $Z$ is connected. 
+\end{proof}
+
+\begin{example}
+The previous theorem allows us to easily determine that  $\mathbb{R}$ (with the euclidean metric topology) and  $\mathbb{R}\setminus\{0\}$ (with the subspace topology) are not topologically equivalent. This follows from the fact that $\mathbb{R}\setminus\{0\}$ is not connected, actually $$\mathbb{R}\setminus\{0\}=(-\infty,0)\cup(0,\infty).$$ However, $\mathbb{R}$ is connected.
+\end{example}
+
+\begin{example}
+The embedding from $[0,2\pi)$ to $\mathbb{R}^2$ in \ref{C1:S6:Example:Circleembedding}, implies that the circle is connected for the subspace topology. 
+\end{example}
+
+As we mentioned before, Theorem \ref{C1:S6:Theorem:Connected} is not enough to determine if two subspaces are or are not equivalent. Consider the following counterexample. 
+
+\begin{example}
+Consider the space $\mathbb{R}^2$ with the euclidean metric topology, and $\mathbb{R}^2\setminus\{(0,0)\}$ with the subspace topology. Both spaces are connected, but they are not topologically equivalent. The inequivalence follows from the existence of the puncture in $\mathbb{R}^2\setminus\{0\}.$ In subsequent chapters, we will introduce the Homotopy theory and we will be able to prove this inequivalence.
+\end{example}
+
+\begin{theorem}
+The image of a compact space under a continuous map is compact.
+\end{theorem}
+\begin{proof}
+Let $f:X \to Y$ be a continuous function and let $X$ be a compact topological space. Let $\mathcal{A}$ be a covering set for $f(X)$ by open subsets of $Y.$ By continuity, $$\left\{f^{-1}(A):A\in\mathcal{A}\right\}$$ is a open cover for $X.$ Since $X$ is compact (by hypothesis), there exist finitely many open sets that cover $X,$ let's say $$f^{-1}(A_1),\hdots, f^{-1}(A_n).$$ Then the sets $A_1,\hdots, A_n$ cover $f(X).$
+
+Since our election of covering was arbitrary, we can say that $f(X)$ is compact.
+\end{proof}
+
+\begin{example}
+The previous theorem allows us to easily determine that  $[0,1]$ and  $(0,1),$ as topological subspaces of $\mathbb{R},$ are not topologically equivalent. This follows from the fact that $[0,1]$ is compact but $(0,1)$ is not. 
+
+In general, the open balls in $\mathbb{R}^n$  (with the euclidean metric) are not topologically equivalent to its closure. 
+\end{example}
+
+
+Compactness is not a sufficient condition to determine topological equivalence. The next counterexample.
+
+\begin{example}
+Consider the subspaces $\mathbb{S}^1$  and $\mathbb{S}^2$ both embedded in $\mathbb{R}^3$ with the subspace topology. Both subspaces are compact but they are not topologically equivalent. Again, this follows from the Homotopy theory.
+\end{example}
+
 
 %\chapter{Second Chapter}
 %

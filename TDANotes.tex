@@ -11,6 +11,8 @@
 \usepackage{kaobiblio}
 %\addbibresource{minimal.bib}
 \usepackage{kaotheorems}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,arrows}
 
 % Load the package for hyperreferences
 \usepackage{kaorefs}
@@ -593,18 +595,14 @@ In general, a $n-$simplex contains all previous dimension simplices as boundarie
 
 
 
-\section{Special Metric Spaces}
-
-Of course, metric spaces theory is not only the study of $\mathbb{R}^n.$ In this section, we will provide a detailed introduction to other metric spaces that interest us.
-
-\subsection{Hamming Distance and Coding}
-
-
-\subsection{Intrinsic Metric}
-
-
-\section{Quotient spaces and their topology}
-
+%\section{Special Metric Spaces}
+%
+%Of course, metric spaces theory is not only the study of $\mathbb{R}^n.$ In this section, we will provide a detailed introduction to other metric spaces that interest us.
+%
+%\subsection{Hamming Distance and Coding}
+%
+%
+%\subsection{Intrinsic Metric}
 
 \section{Homeomorphims}
 
@@ -760,6 +758,405 @@ Compactness is not a sufficient condition to determine topological equivalence. 
 \begin{example}
 Consider the subspaces $\mathbb{S}^1$  and $\mathbb{S}^2$ both embedded in $\mathbb{R}^3$ with the subspace topology. Both subspaces are compact but they are not topologically equivalent. Again, this follows from the Homotopy theory.
 \end{example}
+
+We first ask why a donut and a mug are the same under topological eyes. Well, this follows from the fact that they are topologically equivalent but it is not easy to find the homeomorphism. How we can assure that those spaces are equivalent if we cannot construct a homeomorphism? With help of an \emph{isotopy}, we can prove the answer to the first question.
+
+\begin{definition}
+Let $X,Y\subset \mathbb{R}^n$ two subspaces. An \emph{isotopy} is a continuous map $$\xi: X\times [0,1] \to \mathbb{R}^n$$ such that: 
+\begin{enumerate}
+\item $\xi(X,0)=X,$
+\item $\xi(X,1)=Y,$
+\item and for every $t\in[0,1],$ $\xi(\cdot,t)$ is an homeomorphism between $X$ and the image of $\xi(\cdot,t).$ 
+\end{enumerate}
+\end{definition}
+
+Isotopies are continuous deformations of one space into another, but there are some restrictions on these deformations: we cannot self-intersect the space during the deformation, and we cannot break into pieces something that is connected.
+
+Using the isotopy construction, we can deform a mug into a donut without a problem, and since every step ($t\in [0,1]$) of the isotopy function is a homeomorphism, we have that both spaces are topologically equivalent. 
+
+Some spaces are topologically equivalent but they are not isotopic (there is no isotopy between them), look at the following example.
+
+\begin{example}
+A mathematical knot is an embedding of $\mathbb{S}^1$ into $\mathbb{R}^3 or \mathbb{S}^3.$ From its definition, a knot is topologically equivalent to $\mathbb{S}^1.$ Nevertheless, they are not isotopic because if we want to ``unknot'' the knot we are forced to self-intersect the circle.
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{O_168.png}
+\caption{Examples of knots in $\mathbb{R}^3.$}
+\end{figure}
+\end{example}
+
+\subsection{Exercises:}
+
+\begin{enumerate}
+
+\item Using continuous functions, what you can say about the topological properties of the following spaces?
+\begin{itemize}
+\item $A=\left\{(x,y)\in\mathbb{R}^2: xy=1\right\}.$
+\item $A=\left\{(x,y,z)\in\mathbb{R}^2: 2z^2+3y^2+x^2=1\right\}.$
+\end{itemize}
+
+\item Prove that if $f:X\to Y$ is a continuous map, and $X$ is path-connected. Then $Y$ is path-connected too.
+
+\item Show that the square $[0,1]\times[0,1]\in \mathbb{R}\times\mathbb{R}$ is homeomorphic to the torus.
+
+\begin{figure}[h]
+\includegraphics[scale=0.1]{Torus.png}
+\caption{Torus surface in $\mathbb{R}^3.$}
+\end{figure}
+
+
+\item Find an isotopy between $X=\{(x,\sin(x)): x\in[0,2\pi]\}$ and $Y=\{(x,\cos(x)):x\in[0,2\pi]\}$ spaces of $\mathbb{R}^2.$
+
+\item Show that $f:\mathbb{R}\to \mathbb{R}^2$ given by $f(x)=(x,\cos(x))$ is an embedding.
+
+\item What can you say about the subspace $S=\left\{(x,x\sin\left(\frac{1}{x}\right): x\in (0,1]\right\}\cup\{(0,0)\}.$
+
+\item Suppose that $f:X\to Y$ is continuous. If $x\in X$ is a limit point for some subset $A\subset X.$ Is it necessarily true that $f(x)$ is a limit point of $f(A)$? $\star$
+
+\item Show that the subespace $(a,b)\subset \mathbb{R}$ is homeomorphic to $(0,1).$
+
+\item Let $f:A\to B$ and $g:C\to D$ two continuous functions. Let us define the map $f\times g:A\times C \to B\times D$ by the equation $$(f\times g)(a\times c)=f(a)\times g(c).$$ Show that $f\times g$ is continuous. (\textit{Hint: Do research about product spaces and product topology}) $\star$
+
+\item Let $X$ be a metric space with metric $d.$ Show that $d:X\times X\to \mathbb{R}$ is continuous.
+
+\item Let $(X,d_X)$ and $(Y,d_Y)$ be two metric spaces. Let $f:X\to Y$ that satisfies $$d_Y(f(x_1),f(x_2))=d_X(x_1,x_2).$$ Show that $f$ is an embedding. 
+
+\item Show that $\mathbb{R}^n$ and $\mathbb{R}$ are not homeomorphic for $n>1.$ $\star$
+
+\end{enumerate}
+
+\section{Quotient spaces and their topology}
+
+Unlike previous constructions, Quotient topology is not a natural generalization of something that you already studied in calculus or analysis. Nevertheless, its fundaments come from geometry where we can ``cut-and-paste'' pieces to obtain something new. 
+
+A cylinder is a naive example, if we take a rectangle in $\mathbb{R}^2$ we can use a map (continuous function) that sends one of the big sides into the other and we can ``glue them''.  If we extend this example, and ``glue'' the end circles of the triangle, we obtain a surface torus. Some of you may be familiar with the schema presented in Figure \ref{Fig:TorusDiag}.
+
+ \begin{figure}[h]
+ \begin{tikzpicture}[scale=0.5]
+  % lattice
+%  \draw[->,ultra thick] (-2,0) -- (2,0);
+%  \draw[->,ultra thick] (0,-2) -- (0,2);
+%  \draw (-2,-2) grid (2,2);
+%  \node [draw,ultra thick,rectangle,minimum width=1cm,minimum height=1cm,label=below:$2 \pi$,label=right:$2 \pi$] at (0.5,0.5) {};
+
+  % square
+  \begin{scope}[xshift=4cm,yshift=1cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .145 with {\arrow{latex}},
+          mark=at position .375 with {\arrow{latex}},
+          mark=at position .635 with {\arrowreversed{latex}},
+          mark=at position .875 with {\arrowreversed{latex}},
+        }
+    ]
+    (0,-1) -- +(2,0) -- +(2,2) -- +(0,2) -- cycle;
+  \end{scope}
+
+  % bracelet
+  \begin{scope}[xshift=9.5cm,yshift=1cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}}
+        }
+    ]
+    (0,.25) -- ++(2,0);
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}}
+        }
+    ]
+    (0,-.25) -- ++(2,0);
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (0,-.25) to[out=-120,in=0] (-.35,-.75) to[out=180,in=180] (-.35,.75) to[out=0,in=120] (0,.25);
+    \draw (2,.25) to[out=120,in=0] (1.65,.75) -- (-.35,.75) (-.35,-.75) -- (1.65,-.75) to[out=0,in=-120] (2,-.25);
+    \begin{scope}
+      \clip (0,.25) rectangle (2,-.25);
+      \draw[postaction={decorate},decoration={
+            markings,
+            mark=at position .5 with {\arrowreversed{latex}},
+          }
+      ] (1.65,.75) to[out=180,in=180] (1.65,-.75);
+    \end{scope}
+  \end{scope}
+
+  % cylinder
+  \begin{scope}[xshift=14.7cm,yshift=1cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (0,0) -- (2,0);
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (0,0) arc[start angle=0,delta angle=-360,x radius=.35,y radius=.75];
+    \draw (2,0) arc[start angle=0,delta angle=-90,x radius=.35,y radius=.75] -- ++(-2,0);
+    \draw (2,0) arc[start angle=0,delta angle=90,x radius=.35,y radius=.75] -- ++(-2,0);
+  \end{scope}
+
+  % long cylinder
+  \begin{scope}[xshift=4cm,yshift=-1.2cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (0,0) -- (3,0);
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .6 with {\arrow{latex}},
+        }
+    ] (0,0) arc[start angle=0,delta angle=-360,x radius=.15,y radius=.35];
+    \draw (3,0) arc[start angle=0,delta angle=-90,x radius=.15,y radius=.35] -- ++(-3,0);
+    \draw (3,0) arc[start angle=0,delta angle=90,x radius=.15,y radius=.35] -- ++(-3,0);
+  \end{scope}
+
+  % open torus
+  \begin{scope}[xshift=9cm,yshift=-1.7cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (1,0) arc[start angle=0,delta angle=-360,x radius=.15,y radius=.35];
+    \draw (1,0) ++(-.15,-.35) .. controls +(170:1) and +(-90:.5) .. ++(-1.5,1) .. controls +(90:.5) and +(180:1) .. ++(2,1) .. controls +(0:1) and +(90:.5) .. ++(2,-1) .. controls +(-90:.5) and +(10:1) .. ++(-1.5,-1) coordinate (a);
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrow{latex}},
+        }
+    ] (a) ++(-.15,.35) arc[start angle=0,delta angle=-360,x radius=-.15,y radius=.35];
+    \draw (1,0) ++(-.15,.35) .. controls +(170:.5) and +(-60:.25) .. ++(-.9,.5) coordinate (b);
+    \draw (a) ++(0,.7) .. controls +(10:.5) and +(240:.25) .. ++(.9,.5) coordinate (c);
+    \begin{scope}
+      \clip (1,0) ++(-.15,.35) .. controls +(170:.5) and +(-60:.25) .. ++(-.9,.5) -- ++(0,2) -| (c) .. controls +(240:.25) and +(10:.5) .. ++(-.9,-.5);
+      \draw (1,0) ++(-.15,-.35) ++(0,-.7) .. controls +(170:1) and +(-90:.5) .. ++(-1.5,.8) .. controls +(90:.5) and +(180:1) .. ++(2,1.2) .. controls +(0:1) and +(90:.5) .. ++(2,-1.2) .. controls +(-90:.5) and +(10:1) .. ++(-1.5,-.8);
+      \draw[postaction={decorate},decoration={
+            markings,
+            mark=at position .5 with {\arrow{latex}},
+          }
+      ] (1,0) ++(-.15,-.35) ++(0,-.8) .. controls +(170:1) and +(-90:.5) .. ++(-1.5,.8) .. controls +(90:.5) and +(180:1.2) .. ++(2,1.5) .. controls +(0:1.2) and +(90:.5) .. ++(2,-1.5) .. controls +(-90:.5) and +(10:1) .. ++(-1.5,-.8);
+    \end{scope}
+    \begin{scope}
+      \clip (a) ++(-.15,.35) arc[start angle=0,delta angle=-360,x radius=-.15,y radius=.35];
+      \draw (a) ++(-.15,.35) .. controls +(10:1) and +(-90:.5) .. ++(1.5,.8);
+    \end{scope}
+    \begin{scope}
+      \clip (1,0) arc[start angle=0,delta angle=-360,x radius=.15,y radius=.35];
+      \draw (1,0) .. controls +(170:1) and +(-90:.5) .. ++(-1.5,.8);
+    \end{scope}
+  \end{scope}
+
+  % torus
+  \begin{scope}[xshift=14cm,yshift=-1.7cm]
+    \draw[postaction={decorate},decoration={
+          markings,
+          mark=at position .5 with {\arrowreversed{latex}},
+        }
+    ] (1.5,.35) arc[start angle=90,end angle=-90,y radius=.35,x radius=.1];
+    \draw (1.5,-.35) .. controls +(180:1) and +(-90:.65) .. ++(-2,1) .. controls +(90:.65) and +(180:1) .. ++(2,1) .. controls +(0:1) and +(90:.65) .. ++(2,-1) .. controls +(-90:.65) and +(0:1) .. ++(-2,-1); \draw (1.5,.35) .. controls +(180:.5) and +(-50:.25) .. ++(-1.3,.35) coordinate (b);
+    \draw (1.5,.35) .. controls +(0:.5) and +(230:.25) .. ++(1.3,.35) coordinate (c);
+    \begin{scope}
+      \clip (1.5,.35) .. controls +(180:.5) and +(-50:.25) .. ++(-1.3,.35) -- ++(0,2) -| (c) .. controls +(230:.25) and +(0:.5) .. ++(-1.3,-.35);
+      \draw (1.5,-.35) ++(0,-.7) .. controls +(180:1) and +(-90:.65) .. ++(-1.5,1) .. controls +(90:.65) and +(180:1) .. ++(1.5,1) .. controls +(0:1) and +(90:.65) .. ++(1.5,-1) .. controls +(-90:.65) and +(0:1) .. ++(-1.5,-1);
+      \draw[postaction={decorate},decoration={
+            markings,
+            mark=at position .5 with {\arrow{latex}},
+          }
+      ] (1.5,-.35) ++(0,-.6) .. controls +(180:1) and +(-90:.65) .. ++(-1.5,1) .. controls +(90:.65) and +(180:1) .. ++(1.5,1) .. controls +(0:1) and +(90:.65) .. ++(1.5,-1) .. controls +(-90:.65) and +(0:1) .. ++(-1.5,-1);
+    \end{scope}
+  \end{scope}
+
+\end{tikzpicture}
+\label{Fig:TorusDiag}
+\caption{Torus gluing diagram from a rectangle.}
+ \end{figure}
+ 
+ This ``gluing'' process allows us to create new topological spaces. In this section, we will introduce what we understand by ``gluing'' in a formal way and how to describe the topology of these ``glued'' spaces.
+ 
+ Before defining a quotient space, recall the definition of equivalence relation introduced in Section.
+ 
+ \begin{definition}
+ Let $(X,\tau_X)$ be a topological space, and let $\sim$ be an equivalence relation on $X.$ The \emph{quotient set} is defined as the set $$Y=X/_\sim=\{[x]: x\in X\}$$ where $[\cdot]$ denotes the equivalence classes of $X$ under $\sim.$
+ \end{definition}
+ 
+The previous definition just says that a quotient space is a set consisting of all existing different equivalence classes on $X.$ 
+
+\begin{example}
+Let $(\mathbb{N},2^{\mathbb{N}})$ with the equivalence relation $x\sim y$ if and only if 2 divides $x$ and $y,$ or none of them.
+
+The quotient space is just the set $\{[1],[2]\}.$
+\end{example}
+
+\begin{example}
+Let $[0,1]\times[0,1]$ with the subspace topology of $\mathbb{R}^2.$ Consider the equivalence relation: $(x_1,y_1)\sim (x_2,y_2)$ if and only if one these are true
+\begin{itemize}
+\item $x_1=x_2,$  $y_i=0$ and $y_j=1.$
+\item $y_1=y_2,$ $x_i=0$ and $y_j=1.$
+\end{itemize}
+
+There are four types of equivalence classes: 
+\begin{itemize}
+\item $[(0,0)]=\{(0,0),(0,1), (1,1),(1,0)\},$
+\item $[(x,0)]=\{(x,0),(x,1)\}$ with $x\in(0,1).$
+\item $[(0,y)]=\{(0,y),(1,y)\}$ with $y\in (0,1).$
+\item $[(x,y)]=\{(x,y)\}$ with $(x,y)\in(0,1)\times(0,1).$
+\end{itemize}
+\end{example}
+ 
+ What can you say about the last example? It looks familiar, well the quotient space is the torus surface. 
+ 
+ \begin{definition}
+ Let $(X,\tau_X)$ be a topological space and $Y=X/_\sim$ be a quotient space. The \emph{quotient topology} on $Y$ is defined as follows: $U\subset Y$ is an open set if and only if $$\{x\in X:[x]\in U\}\in \tau_X.$$
+ 
+ The quotient set with the quotient topology is known as a \emph{quotient space}.
+ \end{definition}
+ 
+ \begin{example}
+ For our first example $Y_1=\mathbb{N}/_\sim,$ the quotient topology coincides with the discrete topology on a space of two elements. Note that $\{[1]\}$ is open, because $\{1,3,5,7,9,\cdots\}$ is a open subset for $\mathbb{N}.$ For similar reason, $\{[2]\}$ is also open.
+ \end{example}
+ 
+ \begin{example}
+ For our second example $Y_2={}^{[0,1]\times[0,1]}/_\sim,$ the quotient space have three types of opens sets:
+ \begin{itemize}
+ \item The neighborhoods of $[(0,0)],$ these open sets are like a circle formed by 4 pieces (each with their center in the corners of the rectangle).
+ 
+ \item The neighborhoods of $[(x,0)]$ or $[(0,y)],$ these open sets are like a circle formed by 2 pieces (cut over a diameter).
+ 
+ \item The neighborhoods of $[(x,y)]$ that are usual disks.
+ \end{itemize}
+ \end{example}
+ 
+\begin{definition}
+Let $(X,\tau_X)$ and $X/_\sim$ a quotient space. Let $\pi: X\to X/_\sim$ be the function that sends each element to its equivalence class, \emph{i.e.}, $$x\mapsto [x].$$
+
+This function $\pi$ is called the \emph{canonical projection} and it is an embedding.
+\end{definition}
+
+\subsection{Crushing things}
+
+Let $(X,\tau_X)$ be a topological space, and $A\subset X$ be a set. Let $\sim$ the equivalence relation on $X$ given by $x\sim y$ if and only if $x,y\in A.$ The last equivalence relation, breaks $X$ into two different types of classes: $A$ and $\{x\}.$  In the quotient space $X/\sim,$ the set $A$ is ``crushed'' into a point, and the original topological space ``deforms'' from its original form; from this fact, we will denote $X/\sim$ by $X/A.$
+
+\begin{example}
+Let $X=[0,1]$ with the subspace topology and $A=\partial X=\{0,1\}.$ The quotient space $X/A$ is homeomorphic to $\mathbb{S}^1.$
+
+This homeomorphism is because $(0,1)$ remains the same, and $0$ and $1$ are identified into a single point.
+\end{example}
+
+\begin{example}
+Let $X=\overline{B((0,0),1)}$ the closed disk in $\mathbb{R}^2$ with the subspace topology, and let $A=\partial X.$ Then $X/A$ is homeomorphic to $\mathbb{S}^2$ with the subspace topology.
+\end{example}
+
+\begin{example}
+Let $X$ be the surface torus, and $A$ be one of its meridians. Then $X/A$ is called a \emph{pinched torus}.
+\end{example}
+
+
+\subsection{Quotients and continuous functions}
+
+One could ask, what happens to a continuous function $f: X\to Y$ if we define a quotient space from $X$? Does the continuity follow being true for the new function? Well, the answer is \textit{depends} on the definition of the function $f$ and the equivalence relation.
+
+\begin{definition}
+Let $f: X\to Y$ be a continuous function and let $\sim$ be an equivalence relation on $X.$ We way that $f$ \emph{descends} to the quotient if there exists a continuous function $$\hat{f}:{}^X/_\sim \to Y$$ such that $\hat{f}=f\circ \pi,$ where $\pi: X\to {}^X/_\sim.$ The function $\hat{f}$ is also continuous.
+\end{definition} 
+
+
+\begin{example}
+Let $(\mathbb{N},2^{\mathbb{N}})$ with the equivalence relation $x\sim y$ if and only if 2 divides $x$ and $y,$ or none of them.
+
+The quotient space is just the set ${}^{\mathbb{N}}/_\sim=\{[1],[2]\}.$ Let $Y=\{0,1\},$ with the discrete topology and define the map
+
+\begin{eqnarray*}
+f: & \mathbb{N} \to Y \\
+& x\mapsto x\pmod 2
+\end{eqnarray*} where $x\pmod 2$ is just the reminder of the division of $x$ by two. The function $f$ descends to the quotient.
+\end{example}
+
+\begin{example}
+Let $X=[0,1]\times\{0\}$ with the subspace topology of $\mathbb{R}^2,$ and consider the quotient space $X/A$ where $A=\partial X.$ The function $f:[0,1]\times\{0\} \to \mathbb{R}^2$ given by $$f(x,0)=\left(\frac{1}{2}-x^3,0\right)$$ descends to the quotient. 
+
+figura ejemplo 
+\end{example}
+
+\section{Exercises}
+
+\begin{enumerate}
+\item Let $\mathbb{R}^2$ with the standard topology. Consider the following relation on $\mathbb{R}^2:$ $(x_1,y_1)\sim (x_2,y_2)$ if and only if $(x_1-x_2,y_1-y_2)\in\mathbb{Z}^2.$
+\begin{enumerate}
+\item Prove that $\sim$ is an equivalence relation in $\mathbb{R}^2.$
+\item Describe the set of equivalence classes.
+\item In case that $\sim$ is an equivalence relation, describe the open sets for ${}^{\mathbb{R}^2}\!/_\sim$.
+\item Do you know a topological space that could be homeomorphic to ${}^{\mathbb{R}^2}\!/_\sim$
+\end{enumerate}
+
+\item  Let $\mathbb{S}^1$ embedded in $\mathbb{C}^1$ as the set of $\{z\in\mathbb{C}: z=e^{i\pi\theta},\theta\in\mathbb{R}\}$ and $\mathbb{C}^1$ with the metric topology. Consider the following relation on $\mathbb{S}^1:$ $z_1\sim z_2$ if and only if $\arg(z_1)-\arg(z_2)\in\mathbb{Z}.$
+\begin{enumerate}
+\item Prove that $\sim$ is an equivalence relation in $\mathbb{S}^1.$
+\item Describe the set of equivalence classes.
+\item Do you know a topological space that could be homeomorphic to ${}^{\mathbb{S}^1}\!/_\sim$
+\end{enumerate}
+
+\item Let $X=\mathbb{R}^2\setminus\{(0,0)\}$ with the subspace topology. Consider the following relation on $\mathbb{R}^2\setminus\{(0,0)\}$: $(x_1,x_2)\sim (y_1,y_2)$ if and only if there exists $c\in\mathbb{R}\setminus\{0\}$ such that $(x_1,x_2)=c(y_1,y_2).$ $\star$
+\begin{enumerate}
+\item Prove that $\sim$ is an equivalence relation in $\mathbb{R}^2\setminus\{(0,0)\}.$
+\item Describe the set of equivalence classes.
+\item Does ${}^{X}\!/_{\sim}$ is homeomorphic to the quotient space of $\mathbb{S}^2$  that identifies antipodal points?
+\end{enumerate}
+
+
+\item Let $K_2$ be the two simplex in $\mathbb{R}^3$ with the standard topology. Give a picture that describes the open sets for ${}^{K_2}\!/_{\partial K_2}$ and the resulting quotient space.
+
+\item As the previous example, give a picture that describes the open sets for ${}^{K_2}\!/_{V}$ where $V$ is the set of 0-simplices in $K_2.$ Also, describe the resulting quotient space.
+
+\item Let $\mathbb{S}^1\subset \mathbb{C}$ (described as in exercise 2), and let $A=\{1,i,-1,-i\}.$ How is ${}^{\mathbb{S}^1}\!/_{A}$? What happens if $A$ is the set of $n-$roots of the unity? $\star$
+
+\item Let $X$ be the space in the figure below (thought as embedded in $\mathbb{R}^3$) and $A$ be the red subset. Which of the following functions $X\to \mathbb{R}$ descends to the quotient ${}^X\!/_A$?
+\begin{enumerate}
+\item The projection to the $y-$axis.
+\item The projection to the $x-$axis.
+\item The projection to the $z-$axis.
+\item The projection to the $xy-$plane.
+\end{enumerate}
+\end{enumerate}
+
+\begin{figure}[h]
+\includegraphics[scale=0.05]{DescendMaps.png}
+\caption{Image for Exercise 7}
+\end{figure}
+
+\section{Homotopy}
+
+In this section, we will introduce the concept of Homotopy and Homotopy equivalence. Homotopy. Homotopy equivalence is weaker than topological equivalence, but even if it is a weaker concept \emph{homotopy} ``preserve'' some characteristics of the spaces. For example, when we shrink a ball into a point we are making a homotopy, and this shrinking process cannot be a homeomorphism. The relevance of homotopy is that it preserves some form of connectivity, for example, connected components, holes, or voids. A coffee mug is \emph{homotopic} to a circle because they have a hole, but it cannot be to a point or a ball.
+
+\begin{definition}
+Let $f: X\to Y$ and $g: X\to Y$ two continuous functions. A \emph{homotopy} is a map $$H: X\times[0,1]\to Y$$ such that 
+\begin{enumerate}
+\item $H(\cdot, 0)=f,$
+\item $H(\cdot,1)=g.$
+\end{enumerate}
+
+Two continuous functions are \emph{homotopic} if there exists a homotopy connecting them.
+\end{definition} 
+
+\begin{example}
+Consider the functions $f: \mathbb{B}^n\to \mathbb{R}^n$ the identity, and $g: \mathbb{B}^n\to\mathbb{R}^n$ that sends everything to the vector $0\in\mathbb{R}^n.$ The maps $f$ and $g$ are homotopic, consider the homotopy $H: \mathbb{B}^3\times[0,1]\to \mathbb{R}^3$ given by $$H(x,t)=(1-t)x.$$ Note that the function $H(\cdot,0)=f$ and $H(\cdot,1)=g.$ 
+
+Therefore, every ball in $\mathbb{R}^n$ is homotopic to a point.
+\end{example}
+
+\begin{example}
+Consider the functions $f:\mathbb{R}^n\to\mathbb{R}^n$ the identity, and $g:\mathbb{R}^n\to\mathbb{R}^n$ that sends everything to the vector $0\in\mathbb{R}^n.$ The maps $f$ and $g$ are homotopic. The same homotopy of the previous example works. 
+
+In the case that a space $X$ is homotopic to a point, we said that $X$ is \emph{contractible}.
+\end{example}
+
+\begin{example}
+Consider the functions $f: \mathbb{R}^2 \setminus\{0\} \to \mathbb{R}^2$ the identity, and $g: \mathbb{R}^2\setminus\{0\}\to\mathbb{R}^2$ given by: $g(x)=\frac{x}{||x||}$. The maps $f$ and $g$ are homotopic. Consider the function $H:\mathbb{R}^2\setminus\{0\} \times [0,1]$ given by $$H(x,t)=(1-t)x+tg(x).$$
+
+This example implies that the punctured 2-plane is homotopic to the circle.
+\end{example}
+
 
 
 %\chapter{Second Chapter}

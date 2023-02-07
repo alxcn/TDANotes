@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  30 JAN 2023 10:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  1 FEB 2023 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2332,18 +2332,14 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (TDANotes.aux
-! Undefined control sequence.
-l.124 \@wr
-          
-? 
-)
+ (TDANotes.aux)
 \openout1 = `TDANotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 21.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  21.
- (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\omlnpxmi.fd
+
+(C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -2360,7 +2356,8 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 21.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
 21.
- (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxexa.fd
+
+(C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -2371,6 +2368,7 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 21.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
  21.
+
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/newpx\lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
@@ -2706,6 +2704,14 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 20.11783pt on input line 60.
 Package tocbasic Info: character protrusion at toc deactivated on input line 60
 .
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.08101pt on input line 60.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 5.335pt on input line 60.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sl' will be
 (Font)              scaled to size 9.70001pt on input line 61.
 \openout4 = `TDANotes.mw'.
@@ -2779,16 +2785,8 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 13.968pt on input line 87.
 LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
 (Font)              scaled to size 9.70001pt on input line 90.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 90.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 90.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 91.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 91.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 91.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
 t line 105.
 
@@ -2896,27 +2894,27 @@ t line 486.
 \openout4 = `TDANotes.mw'.
 
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 14.4pt on input line 530.
+(Font)              scaled to size 14.4pt on input line 557.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.5pt on input line 530.
+(Font)              scaled to size 10.5pt on input line 557.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.9pt on input line 530.
+(Font)              scaled to size 7.9pt on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
+(hyperref)                removing `math shift' on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\px@BbbR' on input line 530.
+(hyperref)                removing `\px@BbbR' on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 530.
+(hyperref)                removing `superscript' on input line 557.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
+(hyperref)                removing `math shift' on input line 557.
 
 \openout4 = `TDANotes.mw'.
 
@@ -2942,6 +2940,73 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 [15] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+
+
+LaTeX Warning: Reference `C1:S6:ExampleInversion' on page 16 undefined on input
+ line 708.
+
+\openout4 = `TDANotes.mw'.
+
+[16] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+
+
+LaTeX Warning: Reference `C1:S6:Example:Circleembedding' on page 17 undefined o
+n input line 733.
+
+
+LaTeX Warning: Reference `C1:S6:Theorem:Connected' on page 17 undefined on inpu
+t line 736.
+
+\openout4 = `TDANotes.mw'.
+
+[17] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+<O_168.png, id=401, 1158.3275pt x 796.9775pt>
+File: O_168.png Graphic file (type png)
+<use O_168.png>
+Package pdftex.def Info: O_168.png  used on input line 785.
+(pdftex.def)             Requested size: 579.16234pt x 398.48776pt.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 7.76001pt on input line 786.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 7.76001pt on input line 786.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.76001pt on input line 786.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 6.01399pt on input line 786.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 8.0pt on input line 786.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 6.2pt on input line 786.
+\openout4 = `TDANotes.mw'.
+
+ [18 <./O_168.png>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+<Torus.png, id=416, 361.35pt x 342.78062pt>
+File: Torus.png Graphic file (type png)
+<use Torus.png>
+Package pdftex.def Info: Torus.png  used on input line 805.
+(pdftex.def)             Requested size: 126.4744pt x 119.975pt.
+
+Overfull \hbox (5.77661pt too wide) in paragraph at lines 814--815
+[]\T1/zplLF/m/n/10 (-20) What can you say about the sub-space $\OML/npxmi/m/it/
+10 S \U/npxmia/m/it/10 = [] \LMS/npxsy/m/n/10 [
+ []
+
+\openout4 = `TDANotes.mw'.
+
+[19 <./Torus.png (PNG copy)>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [20] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
  (TDANotes.aux
@@ -3161,7 +3226,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 \openout4 = `TDANotes.mw'.
 
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 )
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3179,13 +3266,13 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61269 strings out of 475389
- 1271677 string characters out of 2775112
- 2452171 words of memory out of 3000000
- 81141 multiletter control sequences out of 15000+600000
- 567251 words of font info for 248 fonts, out of 8000000 for 9000
+ 61440 strings out of 475389
+ 1275180 string characters out of 2775112
+ 2454711 words of memory out of 3000000
+ 81226 multiletter control sequences out of 15000+600000
+ 584694 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10606b,1812s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 133i,20n,159p,10606b,2107s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
 cth-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/n
 ewtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/en
@@ -3204,9 +3291,9 @@ iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on TDANotes.pdf (18 pages, 298396 bytes).
+Output written on TDANotes.pdf (23 pages, 847998 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 215 named destinations out of 1000 (max. 500000)
- 36589 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 41719 words of extra memory for PDF output out of 42996 (max. 10000000)
 

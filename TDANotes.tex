@@ -77,6 +77,10 @@
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
+\chapter*{After Topology: Set theory}
+
+
+
 \chapter{Introduction to Topology}
 
 %\pagelayout{wide} % No margins
@@ -1158,7 +1162,36 @@ This example implies that the punctured 2-plane is homotopic to the circle.
 \end{example}
 
 
+ \begin{definition}
+ Two topological spaces $X$ and $Y$ are \emph{homotopy equivalent} if there exist maps $g:X\to Y$ and $h:Y\to X$ such that $h\circ g$ is homotopic to the identity $\iota_Y:Y\to Y$ and $g\circ h$ is homotopic to the identity $\iota_X:X\to X.$
+ \end{definition}
+ 
+ \begin{example}
+We say that the open ball $\mathbb{B}^2\subset \mathbb{R}^2$ is homotopy equivalent to a point. Take $p\in\mathbb{B}^2$ be any point, and consider the maps $h: \mathbb{B}^2\to \{p\}$ the map that sends everything to $p$ and $g: \{p\}\to\mathbb{B}^2$ the map such that $g(p)=q\in\mathbb{B}^2$ where $q$ is any point. 
 
+Note that $h\circ g$ is trivially the identity map, therefore they are homotopic. On the other hand, $g\circ h: \mathbb{B}^2\to\mathbb{B}^2$ is the map that sends the whole $\mathbb{B}^2$ to $q(=g(p)),$ which is homotopic to the identity using the map $$H(x,t)=(1-t)q+tx.$$
+
+Therefore, $\mathbb{B}^2$ and $q$ are homotopy equivalent.
+ \end{example}
+ 
+ A more intuitive notion of homotopy equivalent spaces can be derived from the definition of a \emph{deformation retract}, naively speaking there exists a deformation retract between two spaces if they can be seen inside a third space $X$ and they can be deformed from one space into the other.
+ 
+ 
+  \begin{definition}
+  Let $X$ be a topological space, and $U\subset X$ be a subspace. A \emph{retraction} $r$ of $X$ to $U$ is a map $r:X\to U$ such that $r(x)=x$ for every $x\in U.$
+  
+ The space $U$ is a \emph{deformation retract} of $X$ if the identity map can be continuously deformed to a retraction with no motions of the points already in $U.$
+  \end{definition}
+  
+  In the previous example, note that a point is a deformation retract of an open ball.
+ 
+ \begin{remark}
+ If $U$ is a deformation retract of $X,$ then $X$ and $U$ are homotopy equivalent.
+ \end{remark}
+ 
+ Homotopy equivalence depends on the space that we are considering the subsets that we want to be homotopic. For example, $\mathbb{S}^1$ is not homotopic equivalent to a point in $\mathbb{S}^1.$ This follows from the fact that if we want a deformation retract in $\mathbb{S}^1$ it is mandatory to break the continuity of $\mathbb{S}^1$ (break it into pieces).  But, $\mathbb{S}^1$ is homotopic to a point if $\mathbb{S}^1$ is a subset of $\mathbb{S}^2.$
+ 
+ Now that we learned about homotopy equivalence, we can assure that $p$ and $a$ are homotopic to $o.$ And that $l$ and $p$ are not homotopic to each other.
 %\chapter{Second Chapter}
 %
 %\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention

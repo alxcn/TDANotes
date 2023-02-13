@@ -1,16 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  10 FEB 2023 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  13 FEB 2023 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores
- de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/TDANotes.tex"
-
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/TDANotes.tex
+**./TDANotes.tex
+(TDANotes.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30>
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\kaobook.cls
+L3 programming layer <2022-08-30> (kaobook.cls
 Document Class: kaobook 2021/08/23 v0.9.8 kaobook
 
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbook
@@ -145,9 +140,7 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count194
 Class scrbook Info: Redefining `\numberline' on input line 7330.
 \bibindent=\dimen138
-)
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\kao.sty
+) (kao.sty
 Package: kao 
 
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions
@@ -1916,9 +1909,7 @@ fg
 File: csquotes.cfg 
 )
 Package csquotes Info: Redefining alias 'english' -> 'english/british'.
-)
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\kaobiblio.sty
+) (kaobiblio.sty
 Package: kaobiblio 
 
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\perpage.sty
@@ -2176,9 +2167,7 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
 ))
 Package biblatex Info: Redefining '\fullcite' on input line 412.
-)
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\kaotheorems.sty
+) (kaotheorems.sty
 Package: kaotheorems 
 
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
@@ -2271,9 +2260,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 libraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen350
-))
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\kaorefs.sty
+)) (kaorefs.sty
 Package: kaorefs 
 
 (C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.s
@@ -2373,9 +2360,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\TDANotes.aux)
+ (TDANotes.aux)
 \openout1 = `TDANotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 23.
@@ -2771,17 +2756,13 @@ Package marginnote Info: Using workaround for absolute page number on input lin
 e 63.
 Package tocbasic Info: character protrusion at lof deactivated on input line 63
 .
-
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\TDANotes.lof)
+ (TDANotes.lof)
 \tf@lof=\write21
 \openout4 = `TDANotes.lof'.
 
 Package tocbasic Info: character protrusion at lot deactivated on input line 69
 .
-
-(C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superiores d
-e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\TDANotes.lot)
+ (TDANotes.lot)
 \tf@lot=\write22
 \openout4 = `TDANotes.lot'.
 
@@ -2790,8 +2771,7 @@ e Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes\TDANotes.lot)
  [2
 
 
-]
-(TDANotes.mw)
+] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2860,73 +2840,89 @@ l.118 \begin{definition}[Union]
  [2] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 10.0pt on input line 183.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.3pt on input line 183.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 5.5pt on input line 183.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 10.82501pt on input line 192.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 11.64001pt on input line 192.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 11.64001pt on input line 192.
 \openout4 = `TDANotes.mw'.
 
  [3]
 (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+\openout4 = `TDANotes.mw'.
+
+ [4] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [5] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
 
 chapter 1.
 \openout4 = `TDANotes.mw'.
 
-[4
+[6
 
 
 ] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 8.73001pt on input line 263.
+(Font)              scaled to size 8.73001pt on input line 308.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 8.73001pt on input line 263.
+(Font)              scaled to size 8.73001pt on input line 308.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 9.0pt on input line 308.
 
 
-LaTeX Warning: Reference `C1:Fig:Graphs' on page 5 undefined on input line 266.
+Package caption Warning: \label without proper reference on input line 309.
+See the caption package documentation for explanation.
 
 
-<DirectedGraphs.png, id=233, 361.35pt x 410.53375pt>
+LaTeX Warning: Reference `C1:Fig:Graphs' on page 7 undefined on input line 311.
+
+
+<DirectedGraphs.png, id=267, 361.35pt x 410.53375pt>
 File: DirectedGraphs.png Graphic file (type png)
 <use DirectedGraphs.png>
-Package pdftex.def Info: DirectedGraphs.png  used on input line 270.
+Package pdftex.def Info: DirectedGraphs.png  used on input line 314.
 (pdftex.def)             Requested size: 180.67456pt x 205.26637pt.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 272.
+(Font)              scaled to size 7.76001pt on input line 316.
 LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 7.76001pt on input line 272.
+(Font)              scaled to size 7.76001pt on input line 316.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `C1:Fig:Wordgraph' on page 5 undefined on input line 2
-76.
+Package caption Warning: \label without proper reference on input line 317.
+See the caption package documentation for explanation.
 
-<Graph_Close_Words.png, id=234, 451.6875pt x 299.1175pt>
+
+LaTeX Warning: Reference `C1:Fig:Wordgraph' on page 7 undefined on input line 3
+19.
+
+<Graph_Close_Words.png, id=269, 451.6875pt x 299.1175pt>
 File: Graph_Close_Words.png Graphic file (type png)
 <use Graph_Close_Words.png>
-Package pdftex.def Info: Graph_Close_Words.png  used on input line 280.
+Package pdftex.def Info: Graph_Close_Words.png  used on input line 322.
 (pdftex.def)             Requested size: 225.84319pt x 149.55838pt.
-
-! Package floatrow Error: Caption(s) lost.
-
-See the floatrow package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 ...raphs of close words with ``dat'' start.}
-                                                  
-? 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.82501pt on input line 297.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 297.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 11.64001pt on input line 297.
 
-Overfull \hbox (27.45381pt too wide) in paragraph at lines 302--303
+Overfull \hbox (27.45381pt too wide) in paragraph at lines 343--344
 []\T1/zplLF/m/n/10 (-20) Le $\OML/npxmi/m/it/10 X \U/npxmia/m/it/10 = \LMS/npxs
 y/m/n/10 f\OT1/zplTLF/m/n/10 0\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 2\OML/npx
 mi/m/it/10 ; \OT1/zplTLF/m/n/10 4\OML/npxmi/m/it/10 ; \OT1/zplTLF/m/n/10 6\OML/
@@ -2945,42 +2941,17 @@ OML/npxmi/m/it/10 ; X\LMS/npxsy/m/n/10 g\OML/npxmi/m/it/10 :$
 
 \openout4 = `TDANotes.mw'.
 
-[5] (TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.0pt on input line 314.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.3pt on input line 314.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 5.5pt on input line 314.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 9.0pt on input line 316.
-\openout4 = `TDANotes.mw'.
-
- [6 <C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superior
-es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/DirectedGraphs.png (PNG
- copy)>] (TDANotes.mw)
+[7] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
 
- [7 <C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superior
-es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/Graph_Close_Words.png (
-PNG copy)>] (TDANotes.mw)
+ [8 <./DirectedGraphs.png (PNG copy)>] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
 
- [8]
-(TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 429.
-\openout4 = `TDANotes.mw'.
-
- [9] (TDANotes.mw)
+ [9 <./Graph_Close_Words.png (PNG copy)>] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -2988,15 +2959,17 @@ input line 429.
  [10] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 470.
 \openout4 = `TDANotes.mw'.
 
- [11] (TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-\openout4 = `TDANotes.mw'.
-
- [12]
+ [11]
 (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [12] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3004,49 +2977,50 @@ input line 429.
  [13] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 627.
 \openout4 = `TDANotes.mw'.
 
  [14] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 14.4pt on input line 698.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.5pt on input line 698.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.9pt on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\px@BbbR' on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
-
 \openout4 = `TDANotes.mw'.
 
-[15] (TDANotes.mw)
+ [15]
+(TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 668.
 \openout4 = `TDANotes.mw'.
 
  [16] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 14.4pt on input line 739.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 10.5pt on input line 739.
+LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
+(Font)              scaled to size 7.9pt on input line 739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\px@BbbR' on input line 739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 739.
+
 \openout4 = `TDANotes.mw'.
 
- [17] (TDANotes.mw)
+[17] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3056,8 +3030,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 \openout4 = `TDANotes.mw'.
 
-
-[19] (TDANotes.mw)
+ [19] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3067,78 +3040,65 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 \openout4 = `TDANotes.mw'.
 
- [21] (TDANotes.mw)
+
+[21] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-<O_168.png, id=493, 1158.3275pt x 796.9775pt>
+\openout4 = `TDANotes.mw'.
+
+ [22] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [23] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+<O_168.png, id=524, 1158.3275pt x 796.9775pt>
 File: O_168.png Graphic file (type png)
 <use O_168.png>
-Package pdftex.def Info: O_168.png  used on input line 922.
+Package pdftex.def Info: O_168.png  used on input line 963.
 (pdftex.def)             Requested size: 579.16234pt x 398.48776pt.
-
-
-! Package floatrow Error: Caption(s) lost.
-
-See the floatrow package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.923 ...ion{Examples of knots in $\mathbb{R}^3.$}
-                                                  
-? 
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.76001pt on input line 923.
+(Font)              scaled to size 7.76001pt on input line 964.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 6.01399pt on input line 923.
+(Font)              scaled to size 6.01399pt on input line 964.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 8.0pt on input line 923.
+(Font)              scaled to size 8.0pt on input line 964.
 LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 6.2pt on input line 923.
-<Torus.png, id=495, 361.35pt x 342.78062pt>
+(Font)              scaled to size 6.2pt on input line 964.
+<Torus.png, id=526, 361.35pt x 342.78062pt>
 File: Torus.png Graphic file (type png)
 <use Torus.png>
-Package pdftex.def Info: Torus.png  used on input line 942.
+Package pdftex.def Info: Torus.png  used on input line 983.
 (pdftex.def)             Requested size: 36.13712pt x 34.28006pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.77661pt too wide) in paragraph at lines 951--952
+Overfull \hbox (5.77661pt too wide) in paragraph at lines 992--993
 []\T1/zplLF/m/n/10 (-20) What can you say about the sub-space $\OML/npxmi/m/it/
 10 S \U/npxmia/m/it/10 = [] \LMS/npxsy/m/n/10 [
  []
 
 \openout4 = `TDANotes.mw'.
 
-[22 <C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superior
-es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/O_168.png>]
-(TDANotes.mw)
+[24 <./O_168.png>] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 
 
-Package caption Warning: \label without proper reference on input line 1034.
+Package caption Warning: \label without proper reference on input line 1146.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Fig:TorusDiag' on page 23 undefined on input line 971
-.
+LaTeX Warning: Reference `Fig:TorusDiag' on page 25 undefined on input line 101
+2.
 
 \openout4 = `TDANotes.mw'.
 
-[23 <C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superior
-es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/Torus.png (PNG copy)>]
-(TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-\openout4 = `TDANotes.mw'.
-
- [24] (TDANotes.mw)
-\openout4 = `TDANotes.mw'.
-
-\openout4 = `TDANotes.mw'.
-
- [25] (TDANotes.mw)
+[25 <./Torus.png (PNG copy)>] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3146,20 +3106,9 @@ es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/Torus.png (PNG copy)>]
  [26] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
-<DescendMaps.png, id=583, 301.125pt x 362.35374pt>
-File: DescendMaps.png Graphic file (type png)
-<use DescendMaps.png>
-Package pdftex.def Info: DescendMaps.png  used on input line 1263.
-(pdftex.def)             Requested size: 15.05713pt x 18.11874pt.
-
-Overfull \hbox (0.52393pt too wide) in paragraph at lines 1263--1264
- [][] 
- []
-
 \openout4 = `TDANotes.mw'.
 
-[27 <C:/Users/L03088338/OneDrive - Instituto Tecnologico y de Estudios Superior
-es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/DescendMaps.png>]
+ [27]
 (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
@@ -3168,14 +3117,51 @@ es de Monterrey/Documents/ITESM/Cursos/2023-FJ/TDANotes/DescendMaps.png>]
  [28] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
+<DescendMaps.png, id=609, 301.125pt x 362.35374pt>
+File: DescendMaps.png Graphic file (type png)
+<use DescendMaps.png>
+Package pdftex.def Info: DescendMaps.png  used on input line 1304.
+(pdftex.def)             Requested size: 15.05713pt x 18.11874pt.
+
+Overfull \hbox (0.52393pt too wide) in paragraph at lines 1304--1305
+ [][] 
+ []
+
+\openout4 = `TDANotes.mw'.
+
+[29 <./DescendMaps.png>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [30] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 1324.
+ line 1365.
 \openout4 = `TDANotes.mw'.
 
- [29] (TDANotes.mw)
+ [31] (TDANotes.mw)
 \openout4 = `TDANotes.mw'.
 
- (TDANotes.aux
+
+(TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3472,66 +3458,34 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62850 strings out of 475389
- 1313208 string characters out of 2775112
- 2474186 words of memory out of 3000000
- 82443 multiletter control sequences out of 15000+600000
+ 62861 strings out of 475389
+ 1314850 string characters out of 2775112
+ 2474751 words of memory out of 3000000
+ 82446 multiletter control sequences out of 15000+600000
  585812 words of font info for 298 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10736b,2109s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection*.39} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection*.35} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection*.16} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection*.6} has been referenced but does not exi
-st, replaced by a fixed one
-
-{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ect
-h-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/new
-tx/ntx-ec-lf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dv
-ips/newtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fon
-ts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088338/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users/L03088338/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:/Users/L0308
-8338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Use
-rs/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><
-C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmia
-STbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/t
-xfonts/txsya.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on TDANotes.pdf (32 pages, 1048571 bytes).
+ 133i,20n,159p,10606b,2109s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
+cth-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/n
+ewtx/ntx-ec-lf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/f
+onts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088338/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users/L03088338
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:/Users/L03
+088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/U
+sers/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb
+><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txm
+iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/txfonts/txsya.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on TDANotes.pdf (34 pages, 1059378 bytes).
 PDF statistics:
- 801 PDF objects out of 1000 (max. 8388607)
- 392 named destinations out of 1000 (max. 500000)
- 41758 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 830 PDF objects out of 1000 (max. 8388607)
+ 398 named destinations out of 1000 (max. 500000)
+ 41766 words of extra memory for PDF output out of 42996 (max. 10000000)
 

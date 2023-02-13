@@ -175,6 +175,45 @@ $$A\cap(B\cup C)=(A\cap B)\cup (A\cap C),$$ and $$A\cup(B\cap C)=(A\cup B)\cap (
 \end{enumerate}
 \end{lemma}
 
+\section{Collections of Sets}
+
+We will focus our attention on a particular class of sets, these are the sets that contain sets as elements, for example, the set of all decks of poker cards in the world. Each element of the previous set is a set itself because they contain objects (cards) satisfying some conditions (design, material, etc.).
+
+\begin{definition}
+Let $A$ be a set, and consider the following set: $$2^A=\mathcal{P}(A)=\{B: B\subset A\}.$$ The previous set is called the \emph{power set} of $A,$ and its elements are all subsets that are contained in $A.$
+\end{definition}
+
+The power set is an example of \emph{collection of sets}, which are sets whose elements are sets and we denote them by script letters. Therefore $A$ and $\mathcal{A}$ are different, one is a set whose elements are objects and the other its elements are sets.
+
+We need to be cautious with the notation for elements in sets and in a collection of sets. For example, if $a\in A$ then $\{a\}\subset A$ and $\{a\}\in \mathcal{P}(A),$ but it is incorrect to write that $\{a\}\in A$  and $a\subset A.$
+
+
+\subsection{Arbitrary Unions and Intersections}
+
+We already defined what we mean by the union and the intersections of two sets, but what happens in the case of a collection of sets? 
+
+Given a collection $\mathcal{A}$ of sets, the \emph{union} of the elements of $\mathcal{A}$ is defined by the equation:
+
+$$\bigcup_{A\in \mathcal{A}} A= \{x : x\in A\mbox{ for at least one }A\in \mathcal{A}\}.$$
+
+The \emph{intersection} of the elements of $\mathcal{A}$ is defined as 
+$$\bigcap_{A\in \mathcal{A}} A= \{x : x\in A\mbox{ for every }A\in \mathcal{A}\}.$$
+
+\begin{example}
+Consider the collection $\mathcal{A}$ of subsets of $\mathbb{R}$ given by $(-n,n)$ where $n\in\mathbb{N}$ (the open intervals whose endpoints are natural numbers). 
+
+We have that $$\bigcup_{A\in\mathcal{A}}A =\mathbb{R}$$ because for any $x\in R$ we can find a natural number such that $x\in (-n,n).$
+
+We have that $$\bigcap_{A\in\mathcal{A}} A= (-1,1)$$ because for any $n\in\mathbb{N}$ it follows that $(-1,1)\subset (-n,n).$
+\end{example}
+
+\begin{example}
+Consider the collection $\mathcal{B}$ of subsets of $\mathbb{R}$ given by $\left(-\frac{1}{n},\frac{1}{n}\right)$ where $n\in\mathbb{N}.$
+
+We have that $$\bigcup_{B\in\mathcal{B}}B =(-1,1)$$ because for any $n\in \mathbb{N}$ we have that $-1\leq -\frac{1}{n}$ and $\frac{1}{n}\leq 1.$
+
+We have that $$\bigcap_{B\in\mathcal{B}} B= \{0\}$$ because for any $n\in\mathbb{N}$ it follows that $0\in \left(-\frac{1}{n},\frac{1}{n}\right).$
+\end{example}
 \section{Exercises:}
 
 \begin{enumerate}
@@ -197,6 +236,12 @@ $$A\cap(B\cup C)=(A\cap B)\cup (A\cap C),$$ and $$A\cup(B\cap C)=(A\cup B)\cap (
 \item Do research about the collection of sets and if the distributive laws are still valid for generalized unions of sets.
 
 \item Do research about Venn's diagrams and how to picture the set operations and properties on them.
+
+\item Find the arbitrary union and intersection of the following collection of sets.
+\begin{enumerate}
+\item $\mathcal{A}=\{(1,n): n\in \mathbb{N}\}.$
+\item $\mathcal{B}=\{(2^{-n},2^{n}):n\in \mathbb{N}\}.$
+\end{enumerate}
 \end{enumerate}
 \chapter{Introduction to Topology}
 

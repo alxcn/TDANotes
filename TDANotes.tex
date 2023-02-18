@@ -1370,7 +1370,57 @@ Therefore, $\mathbb{B}^2$ and $q$ are homotopy equivalent.
  Now that we learned about homotopy equivalence, we can assure that $p$ and $a$ are homotopic to $o.$ And that $l$ and $p$ are not homotopic to each other.
  
  
-%\chapter{Second Chapter}
+\chapter{Simplicial Complexes and Homology groups}
+
+This chapter is key to TDA, over this chapter, we will introduce: Simplicial Complexes and the homology groups associated with them. If we think of data just as a discrete set of points in some space, its topology is not interesting; for this reason, we will construct a topological object that has a more interesting topology. This topological object is called \emph{simplicial complex}. Intuitively, a \emph{simplicial complex} is a collection of simplices (defined in the previous chapter) whose combinatorics capture the information of our data set.
+
+Simplicial complexes are used to study general topological spaces using a minimal set of information. In the literature simplicial complexes are also called triangulations over manifolds, see for example Figure \ref{C2:Fig:Triang}. 
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{Face_Triang.png}
+\label{C2:Fig:Triang}
+\caption{Example of a Simplicial complex that encloses the information of a face.}
+\end{figure}
+
+The second key topic of this chapter is \emph{homology groups}. The \emph{homology groups} in general topological spaces act like a measure of how much the space can be deformed to a point depending on the dimensions. In the particular case of simplicial complexes, the \emph{homology groups} is also known as \emph{simplicial homology groups}. The notion of \emph{homology groups} requires the introduction of concepts like \emph{chains, cycles, and boundaries} and how to operate them. The notions described over this notes can be generalized into more general topological spaces.
+
+The chapter will be composed of an abstract introduction to the concept of \emph{simplicial complex}. Then we will apply this abstract definition to construct the Vietoris-Rips and \v{C}ech complexes, and describe their properties. Now that we have described the objects, we will introduce the abstract concept of homology and we will apply it to the special complexes that we studied before. 
+
+Over this chapter, we will work with the Python library \texttt{simplicial} that allows us to construct abstract simplicial complexes, and compute their homology and Betti numbers. 
+
+\section{Simplicial Complex}
+
+As the name implies, a \emph{simplicial complex} is an object made of simplices (Definition in Chapter ).
+
+\begin{definition}[Simplicial complex]
+
+\end{definition}
+
+
+\begin{definition}[Geometric simplicial complex]
+A \emph{geometric simplicial complex} $K,$ also known as \emph{triangulation}, is a set containing finitely (we can count them and enumerate them) many simplices that satisfy the following two conditions:
+\begin{itemize}
+\item $K$ contains every face of each simplex in $K.$
+\item For any two simplices $\sigma,\tau\in K,$ their intersection $\sigma\cap \tau$ is either empty or a common face.
+\end{itemize}
+
+We say that $K$ has dimension $k$ if $k$ is the maximal dimension of its faces.
+\end{definition}
+
+We refer to Figure \ref{C2:Fig:Delunay} and \ref{C2:Fig:SimplicialComplex} to observe two examples of simplicial complexes. The first one is a 2-dimensional simplicial complex because the maximal dimension of its faces is two (a 2-simplex is a triangle). The second figure corresponds to a 3-dimensional simplicial complex because the maximal dimension of its faces is three (a 3-simplex is a tetrahedron).
+\begin{figure}[h]
+\includegraphics[scale=0.5]{Delunay_Mesh.png}
+\label{C2:Fig:Delunay}
+\caption{Example of a 2-dimensional simplicial complex.}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{Simplicial_Complex.png}
+\label{C2:Fig:SimplicialComplex}
+\caption{Example of a 3-dimensional simplicial complex.}
+\end{figure}
+
+
 %
 %\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 %

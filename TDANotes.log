@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  13 FEB 2023 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.20)  14 FEB 2023 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2886,7 +2886,7 @@ LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
 (Font)              scaled to size 9.0pt on input line 308.
 
 
-Package caption Warning: \label without proper reference on input line 309.
+Package caption Warning: \label without proper reference on input line 315.
 See the caption package documentation for explanation.
 
 
@@ -2906,7 +2906,7 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package caption Warning: \label without proper reference on input line 317.
+Package caption Warning: \label without proper reference on input line 323.
 See the caption package documentation for explanation.
 
 
@@ -3089,7 +3089,7 @@ Overfull \hbox (5.77661pt too wide) in paragraph at lines 992--993
 
 
 
-Package caption Warning: \label without proper reference on input line 1146.
+Package caption Warning: \label without proper reference on input line 1152.
 See the caption package documentation for explanation.
 
 
@@ -3145,7 +3145,95 @@ Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
 \openout4 = `TDANotes.mw'.
 
 
-(TDANotes.aux
+chapter 2.
+
+LaTeX Warning: Reference `C2:Fig:Triang' on page 32 undefined on input line 137
+7.
+
+<Face_Triang.png, id=646, 636.3775pt x 243.91125pt>
+File: Face_Triang.png Graphic file (type png)
+<use Face_Triang.png>
+Package pdftex.def Info: Face_Triang.png  used on input line 1380.
+(pdftex.def)             Requested size: 318.18797pt x 121.95532pt.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 13
+89.
+(C:\Users\L03088338\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 1389.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\openout4 = `TDANotes.mw'.
+
+
+[32
+
+
+ <./Face_Triang.png>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 8.73001pt on input line 1398.
+<Delunay_Mesh.png, id=657, 361.35pt x 360.84813pt>
+File: Delunay_Mesh.png Graphic file (type png)
+<use Delunay_Mesh.png>
+Package pdftex.def Info: Delunay_Mesh.png  used on input line 1406.
+(pdftex.def)             Requested size: 180.67456pt x 180.42361pt.
+<Simplicial_Complex.png, id=658, 361.35pt x 187.70125pt>
+File: Simplicial_Complex.png Graphic file (type png)
+<use Simplicial_Complex.png>
+Package pdftex.def Info: Simplicial_Complex.png  used on input line 1412.
+(pdftex.def)             Requested size: 180.67456pt x 93.85039pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+\openout4 = `TDANotes.mw'.
+
+[33 <./Delunay_Mesh.png (PNG copy)>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+ [34 <./Simplicial_Complex.png (PNG copy)>] (TDANotes.mw)
+\openout4 = `TDANotes.mw'.
+
+ (TDANotes.aux
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
+\openout4 = `TDANotes.mw'.
+
 \openout4 = `TDANotes.mw'.
 
 \openout4 = `TDANotes.mw'.
@@ -3458,34 +3546,36 @@ Package logreq Info: Writing requests to 'TDANotes.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62861 strings out of 475389
- 1314850 string characters out of 2775112
- 2474751 words of memory out of 3000000
- 82446 multiletter control sequences out of 15000+600000
- 585812 words of font info for 298 fonts, out of 8000000 for 9000
+ 62966 strings out of 475389
+ 1317047 string characters out of 2775112
+ 2474789 words of memory out of 3000000
+ 82502 multiletter control sequences out of 15000+600000
+ 590750 words of font info for 313 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,159p,10606b,2109s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-e
-cth-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/n
-ewtx/ntx-ec-lf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/
-dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/f
-onts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088338/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users/L03088338
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:/Users/L03
-088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/U
-sers/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb
-><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txm
-iaSTbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/txfonts/txsya.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on TDANotes.pdf (34 pages, 1059378 bytes).
+{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc
+}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec
+th-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ne
+wtx/ntx-ec-lf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/enc/d
+vips/newtx/ntx-ot1-tlf.enc}{C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fo
+nts/enc/dvips/tex-gyre/q-ec.enc}<C:/Users/L03088338/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/newpx/NewPXMI.pfb><C:/Users/L03088338/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Users/L03088338/AppData
+/Local/Programs/MiKTeX/fonts/type1/bera/fvmr8a.pfb><C:/Users/L03088338/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><C:/Users/L03088338/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><C:/Users/L0308
+8338/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Use
+rs/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><
+C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmia
+STbb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/public/t
+xfonts/txsya.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/newpx/zplb.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/newpx/zplr.pfb><C:/Users/L03088338/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/newpx/zplri.pfb><C:/Users/L03088338/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on TDANotes.pdf (37 pages, 1357295 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 398 named destinations out of 1000 (max. 500000)
- 41766 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 408 named destinations out of 1000 (max. 500000)
+ 44357 words of extra memory for PDF output out of 51595 (max. 10000000)
 

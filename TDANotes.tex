@@ -1259,7 +1259,7 @@ Let $X=[0,1]\times\{0\}$ with the subspace topology of $\mathbb{R}^2,$ and consi
 figura ejemplo 
 \end{example}
 
-\section{Exercises}
+\subsection{Exercises}
 
 \begin{enumerate}
 \item Let $\mathbb{R}^2$ with the standard topology. Consider the following relation on $\mathbb{R}^2:$ $(x_1,y_1)\sim (x_2,y_2)$ if and only if $(x_1-x_2,y_1-y_2)\in\mathbb{Z}^2.$
@@ -1419,6 +1419,178 @@ We refer to Figure \ref{C2:Fig:Delunay} and \ref{C2:Fig:SimplicialComplex} to ob
 \label{C2:Fig:SimplicialComplex}
 \caption{Example of a 3-dimensional simplicial complex.}
 \end{figure}
+
+There is a formal definition for geometric simplicial complexes seen as a collection of subsets of a given set.
+
+\begin{definition}
+A collection $K$ of non-empty subsets of a given set $V$ is an abstract simplicial complex if it satisfies that for any subset of one element of the collection $\sigma\in K,$ this subset also belongs to the collection $K.$
+\end{definition}
+
+Note that given an (abstract) simplicial complex, then its geometric realization is a geometrical simplicial complex. From now on, we will drop these adjectives for simplicial complexes and we will think that both objects are the same.
+
+\begin{definition}
+For any $k\geq 0,$ the $k-$\emph{skeleton} of a simplicial complex $K,$ denoted by $K^k,$ is the subcomplex formed by all simplices of dimension at most $k.$
+\end{definition}
+
+The $k-$skeleton is a central concept that will be used to define \emph{chains} for a given simplicial complex. The study of the properties of \emph{chains} in a simplicial complex is part of the \emph{homology theory} and \emph{homology groups}.
+
+Now we will discuss the topology of simplicial complexes. Previously we define the topology of a unique simplex (its geometric realization) as the subspace topology induced by the metric topology on $\mathbb{R}^n.$ Therefore, the topology for simplicial complexes is again the subspace topology. The following definition introduces the concept of a neighborhood for a given face in this topology.
+
+\begin{definition}
+Let $K$ be a simplicial complex in $\mathbb{R}^m.$ Let $\sigma\in K$ be a simplex. We define the \emph{star} of $\sigma$ in $K$ as the set of all simplices that have $\sigma$ as a face, \emph{i. e.,} $$St(\sigma)=\{\omega\in K: \sigma\subset \omega\}.$$
+\end{definition}
+
+In general, the star of a simplex is not necessarily a simplicial complex because the star may not contain all faces of a simplex. 
+
+\begin{definition}
+The \emph{closed star} of $\sigma\in K$ is the set $$\bigcup_{\omega\in St(\sigma)} \{\sigma\}\cup \{\sigma'\in K: \sigma'\subset \sigma\}$$ and it is denoted by $\overline{St(\sigma)}.$
+\end{definition}
+
+The closed star of a simplex is the smallest simplicial complex contained in $K$ that contains the star of a given simplex.
+
+\begin{definition}
+Given a simplicial complex $K$ and $\sigma\in K$ a simplex. The \emph{link} of $\sigma$ consists of the set of simplices in $\overline{St(\sigma)}$ that are disjoint from $\sigma.$ $$Lk(\sigma)=\{\omega\in \overline{St(\sigma)}: \sigma\cap \omega=\varnothing\}.$$
+\end{definition}
+
+Imagine that we are looking for the star and link of a vertex in a simplicial complex $K.$ The star of $v$ is like an open neighborhood for $v$ and the link is like the boundary of this neighborhood, therefore the closed star is the union of the open star and its link. 
+
+\begin{example}
+Consider the simplicial complex depicted in Figure \ref{C2:Fig:SimplicialComplex2}
+
+\begin{figure}[h]
+\begin{tikzpicture}
+\filldraw[color=gray] (0,0)--(1,1)--(1,-1);
+\draw (0,0)--(1,1)--(1,-1)--(0,0)--(-1,0)--(-2,1)
+(-1,0)--(-2,-1)
+(1,1)--(0,2)--(0,0)--(0,-2)--(1,-1);
+
+\filldraw[color=black] (0,0) circle(1pt) node[below left]{$a$}
+(1,1) circle(1pt) node[right]{$b$}
+(1,-1) circle(1pt) node[right]{$c$}
+(0,2) circle(1pt) node[below left]{$d$}
+(0,-2) circle(1pt) node[below left]{$e$}
+(-1,0) circle(1pt) node[below right]{$f$}
+(-2,1) circle(1pt) node[below left]{$g$}
+(-2,-1) circle(1pt) node[below left]{$h$};
+\end{tikzpicture}
+\caption{Simplicial complex of dimension two.}
+\label{C2:Fig:SimplicialComplex2}
+\end{figure}
+
+\begin{enumerate}
+\item $St(a)=\{\{a,f\},\{a,d\},\{a,e\},\{a,c\},\{a,b\},\{a,b,c\}\}.$
+\item $\overline{St(a)}=\{b,c,d,e,f,\{a,f\},\{a,d\},\{a,e\},\{a,c\},\{a,b\},\{b,c\},\{b,d\},\{c,e\},\{a,b,c\}\}.$
+\item $Lk(a)=\{b,d,c,e,f,\{d,b\},\{e,c\},\{b,c\}\}$
+\end{enumerate}
+\end{example}
+
+\section{Nerves, \v{C}ech and Rips complexes}
+
+Recall that for a topological space a \emph{cover} is a collection of subsets whose union equals to the set. Covers of topological spaces induce a simplicial complex called \emph{nerve}. Nerves provide a bridge between topological spaces and simplicial complex theory. 
+
+\begin{definition}
+Given a finite collection of sets $\mathcal{U}=\{U_\alpha\}_{\alpha\in A},$ we define the \emph{nerve} of the collection $\mathcal{U}$ to be the simplicial complex $N(\mathcal{U})$ whose vertex set is the index set $A,$ and the subset $\{a_0,a_1,\cdots, a_k\}\subset A$ spans a $k-$simplex if and only if $$U_{a_0}\cap U_{a_1}\cap\cdots \cap U_{a_k}\neq \varnothing.$$
+\end{definition}
+
+What is the relevance of the nerve simplex? Well, image that you have a cover of a metric space. Using the homotopy theory, we can retract the ``extra'' space and only care about the simplicial complex. This last one is easier to work with and it preserve the key properties of the space. This property es stated in the next theorem called the \emph{Nerve theorem}.
+
+\begin{theorem}
+\label{C2:Thm:Nervethm}
+Given a finite cover $\mathcal{U}$ (open or closed) of a metric space $M,$ the underlying space $|N(\mathcal{U})|$ is homotopy equivalent to $M$ is every non-empty intersection $$\bigcap_{i=0}^k U_{a_i}$$ of cover elements is homotopy equivalent to a point. 
+\end{theorem}
+
+{\color{red} picture this}
+
+Sometimes is not an easy task to define a cover for an abstract metric space. We can use the \emph{\v{C}ech complex} that is defined in the same spirit as the nerve complex. 
+
+\begin{definition}
+Let $(M,d)$ be a metric space and $P$ be a finite subset of $M.$ Given a real number $r>0,$ the \v{C}ech complex denoted by $\check{C}_r(P)$ is the nerve defined by the cover $\{\overline{B_r(p)}\}_{p\in P}.$
+\end{definition}
+
+{\color{red} Put some image}
+
+Note that if $M$ correspond to $\mathbb{R}^n$ and $d$ is the Euclidean metric, all balls are contractible to a point and hence their intersection. Therefore, by Theorem \ref{C2:Thm:Nervethm}, the \v{C}ech complexes are homotopy equivalent to the space of balls. 
+
+There is another simplicial complex, which is related to the \v{C}ech complex, that is commonly used in TDA. 
+
+\begin{definition}
+Let $(P,d)$ be a finite metric space. Given a real number $r>0,$ the \emph{Vietoris-Rips complex} (or \emph{Rips complex}) is the abstract simplicial complex $VR_r(P)$ where a simplex $\sigma\in VR_r(P)$ is and only if $$d(p,q)\leq 2r$$ for every pair of vertices of $\sigma.$
+\end{definition}
+
+Note that the Vietoris-Rips complex is determined by its 0-skeleton (set of vertices). Naively speaking, we complete the 0-skeleton by adding facets that satisfies the Vietoris-Rips condition on the vertices distance.
+
+Also, if $P$ is a finite subset of a metric space $(M,d)$ where $M$ satisfies that for any real $r>0$ and two points $p,q\in M$ with $d(p,q)\leq 2r,$ the metric balls $B_r(p)$ and $B_r(q)$ have non-empty intersection then the corresponding 1-skeletons of the \v{C}ech and Vietoris-Rips complex are equal. In particular, this is valid for clouds of points in the Euclidean space ($\mathbb{R}^n$ with the Euclidean metric).
+
+Usally previous complexes are too large to handle them in practice, for example the Rips complex of $n$ points in $\mathbb{R}^n$ can have $O(n^d)$ simplices. The next complex is also commonly used in TDA and it is more efficient to handle.
+
+\begin{definition}
+Let $P$ be a set and $\alpha\geq 0,$ and for $p\in P$ let $\overline{B_{\alpha} (p)}$ the closed ball at $p$ of radius $\alpha.$ Define the closed sets $D^{\alpha}_p=\{x\in \overline{B_{\alpha}(p)}: d(x,p)\leq d(x,q) \forall q\in P\}.$ The $\alpha-$\emph{complex}, denoted by $Del^{\alpha}(P)$ is the nerve of the closed sets $\{D^{\alpha}_p\}.$ 
+\end{definition}
+
+\subsection{Exercises}
+
+\section{Chains, Boundaries and Cycles}
+
+Over this section we will work with the algebra associated to simplicial complexes, for that reason we encourage the reader to take a remind on algebraic groups, rings and vector spaces.
+
+Let $K$ be a simplicial $k-$complex (the ``biggest'' facets are of dimension $k$) with $m_p$ number of $p-$simplices ($0\leq p\leq k$).
+
+\begin{definition}
+A $p-$chain $c$ in $K$ is a \emph{formal sum} of $p-$simplices added with some coefficients $$c=\sum_{j=1}^{m_p} a_j \sigma_j.$$
+\end{definition}
+
+We can define the ``sum'' for $p-$chains $c=\sum a_j \sigma_j$ and $c'=\sum b_j\sigma_j$ as the $p-$chain $$c+c'=\sum (a_j+b_j)\sigma_j.$$
+
+Usually, the coefficients can be taken in any ring $R$ but we are mostly interested in the particular case of chains with coefficients in $\mathbb{Z}_2=\{0,1\}$ the integers module 2. Let see how the sum works on chains.
+
+\begin{example}
+Let $K$ be a 2-complex with $e_1=\{a,b\},\,e_2=\{b,c\},\, e_3=\{c,d\}$ and $e_4=\{a,c\}.$ Examples of 1-chains are $e_1+e_2+e_3$ and $e_2+e_4.$ Their sum is $$(e_1+e_2+e_3)+(e_2+e_4)=e_1+e_3+e_4.$$
+
+We can associate this sum with a set operation. For example if we identify $e_1+e_2+e_3$ with the set $\{e_1,e_2,e_3\},$ and $e_2+e_4$ with $\{e_2+e_4\},$ then $(e_1+e_2+e_3)+(e_2+e_4)$ coincides with the \emph{symmetric difference} of their corresponding sets $$\{e_1,e_2,e_3\}\triangle\{e_2,e_4\}=(\{e_1,e_2,e_3\}\setminus\{e_2,e_4\})\cup (\{e_2,e_4\}\setminus \{e_1,e_2,e_3\})=\{e_1,e_3\}\cup\{e_4\}=\{e_1,e_3,e_4\}.$$
+\end{example}
+
+From now on, unless it is specified, we will consider our chains with $\mathbb{Z}_2$ coefficients, and we will denote by $$0=\sum_{j=1}^{m_p}0\sigma_j.$$
+
+\begin{example}
+Consider the $2-$complex depicted on Figure \ref{C2:Fig:2Complex}.
+
+\begin{figure}[h]
+\begin{tikzpicture}
+\filldraw[color=black] (0,0) circle(1pt) node[above]{$b$}
+(-2,1) circle(1pt) node[left]{$a$}
+(2,1) circle(1pt) node[right]{$e$}
+(0,-2) circle(1pt) node[below]{$c$}
+(-1,1.3) circle(1pt) node[above]{$d$};
+\filldraw[color=black!40!white] (0,0)--(2,1)--(0,-2)--(-2,1);
+\filldraw[color=black!25!white] (0,0)--(-1,1.3)--(0,-2)--(0,0);
+\draw (0,0)--(0,-2)--(2,1)--(0,0)
+(0,0)--(-2,1)--(0,-2)
+(0,0)--(-1,1.3)--(0,-2);
+\end{tikzpicture}
+\caption{A simplicial 2-complex.}
+\label{C2:Fig:2Complex}
+\end{figure}
+
+Some examples of chains and their sums.
+
+\begin{center}
+\begin{tabular}{ccc}
+0-chain & $(\{b\}+\{d\})+(\{d\}+\{e\})$ & $=\{b\}+\{e\}$ \\
+1-chain & $(\{a,b\}+\{b,d\})+(\{b,c\}+\{b,d\})$ & $=\{a,b\}+\{b,c\}$\\
+2-chain & $(\{a,b,c\}+\{b,c,e\})+(\{b,c,e\})$ & $=\{a,b,c\}$
+\end{tabular}
+\end{center}
+\end{example}
+
+\begin{lemma}
+Given $K$ a simplicial complex and let $\mathcal{C}^p$ be the set of $p-$chains of $K.$ Then the sum of chains provides on $\mathcal{C}^p$ a group structure whose identity is the chain $0=\sum_{j=1}^{m_p} 0\sigma_j.$
+\end{lemma}
+
+\begin{definition}
+The group $\mathcal{C}^p$ is called the \emph{p-th chain group}.
+\end{definition}
+
+\subsection{Boundaries and Cycles}
 
 
 %

@@ -332,6 +332,28 @@ T_2 & = &\{\{(a,d),a\},\{(b,d),b\},\{(c,d),c\},\{(a,d),(b,d),(c,d),d\}\}
 The collection $\tau=2^{T_1\cup T_2}$ is a topology for $\Gamma.$ Later we will see that this topology is related to the metric space structure on the graph.
 \end{example}
 
+We can induce a topology on a subset of a topological space, intuitively this is made by taking all the subsets of our subset with the open sets of our topological space and take them as open sets.
+
+\begin{definition}{Subspace Topology}
+Given a topological space $(X,\tau_X)$ and a non-empty subset $Y$ of $X.$ The \emph{subspace topology} of $Y$ induced by $(X,\tau_X)$ is the collection of sets $$\{U\cap Y: U\in \tau_X\}$$ and it is denoted by $\tau_{sub}(Y).$
+\end{definition}
+
+\begin{lemma}
+Given $(X,\tau_X)$ and $Y\subset X.$ The subspace topology $\tau_{sub}(Y)$ is a topology.
+\end{lemma}
+\begin{proof}
+\item Notice that $\varnothing\cap Y=\varnothing$ and $X\cap Y=Y$ therefore $$\varnothing,Y\in \tau_{sub}(Y).$$
+
+\item Let $\{U_a\}_{a\in\mathcal{A}}$ a collection of elements of $\tau_{sub}(Y).$ From the fact that $U_a\in \tau_{sub}(Y)$ for any $a\in\mathcal{A},$ we know that $U_a=V_a\cap Y$ for some $V_a\in \tau_X.$ Therefore $$\bigcup_{a\in\mathcal{A}} U_a =\bigcup_{a\in \mathcal{A}} (V_a\cap Y) = \left(\bigcup_{a\in \mathcal{A}} V_a \right)\cap Y$$ the last equality follows from the distributive properties of unions and intersections. Recall that $\tau_X$ is a topology, and every $V_a\in \tau_X$ therefore $\bigcup_{a\in\mathcal{A}}V_a\in \tau_X.$ This asserts that $$\bigcup_{a\in\mathcal{A}}U_a\in \tau_{sub}(Y).$$
+
+The intersection of a finite collection of elements of $\tau_{sub}(Y)$ belongs to $\tau_{sub}(Y)$ is left as an exercise.
+\end{proof}
+
+Other way to induce topologies on other spaces is by taking (set) products. Recall that given two sets $X$ and $Y,$ we can construct a new set called the \emph{product} as the set of all ordered pairs $(x,y)$ with $x\in X$ and $y\in Y.$ This new set is denoted by $X\times Y.$
+
+\begin{definition}{Product topology}
+Given $(X,\tau_X)$ and $(Y,\tau_Y)$ two topological spaces. The \emph{product topology} on $X\times Y$ is the collection $$\{U\times V: U\in \tau_X, V\in \tau_Y\}$$ and it is denoted by $\tau_{prod}(X,Y).$
+\end{definition}
 
 
 \subsection{Exercises:}
@@ -611,13 +633,25 @@ Consider $\mathbb{R}^2$ with the euclidean metric (or standard metric), the basi
 
 The metric topology is very special because topological properties have a more detailed description here. In what follows, we will describe all topological properties for the metric topology. From now on, when we think of a metric space $(X,d)$ we will think $X$ endorsed with the induced metric topology.
 
+\subsection{Open sets}
+
+Notice that in the definition of metric topology we said that open sets are made of arbitrary unions of balls, but this does not clarify when a subset is open on a metric space. 
+
+\begin{definition}{Interior points}
+Let $Y\subset (X,d)$ where $(X,d)$ is a metric space and we take its metric topology. We said that $y\in Y$ is an interior point if there exists an open ball centered at $y$ of some radius totally contained in $Y.$ In symbols: $$\exists \varepsilon >0,\mbox{ such that } B_\varepsilon(y)\subset Y.$$
+
+The set of interior points of $Y$ is denoted by $\mbox{int}(Y).$
+\end{definition}
+
+A subset $Y$ of $X$ is an open set for the metric topology if $Y$ is equal to the set of its interior points.
+
 \subsection{Closed sets}
 
 \begin{definition}
 Let $(X,d)$ be a metric space and $Q\in X$ a point set. We say that $q\in X$ is a \emph{limit point} (or \emph{accumulation point}) of $Q$ if for any real number $\varepsilon$ (no matter how small) there exists a point $p\in Q$ different from $q$ such that $$d(q,p)<\varepsilon.$$
 \end{definition}
 
-The previous definition, in topological terms, means that for a limit point $q,$ any ball centered at $q$ always intersects $Q$.
+The previous definition, in topological terms, means that for a limit point $q,$ any ball centered at $q$ always intersects $Q$ and $X\setminus Q$. Also in the literature, limit points are also called \emph{boundary points}.
 
 \begin{example}
 Consider the set $(\mathbb{R},d)$ with the standard metric. The set $Q=\left\{\frac{1}{n}: n\in\mathbb{N}\right\},$ the point $0\in\mathbb{R}$ is a limit point for $Q.$ You can see in the next figure you can see a sketch of why.
@@ -633,6 +667,21 @@ Let $(X,d)$ be a metric space and $Q\in X$ a point set. We call \emph{boundary} 
 We say that $Q$ is closed in $X$ if it is equal to its closure: $$Q=\overline{Q}.$$
 \end{definition}
 
+\begin{example}
+Consider the subset $[0,1)$ of $(\mathbb{R},d_e).$ Its limit point is $x=1,$ since any ball centered at $1$ intersects $[0,1)$ and $\mathbb{R}\setminus[ 0,1),$ therefore the boundary of $[0,1)$ is $$\partial [0,1) =\{1\}$$ and its closure is $\overline{[0,1)}=[0,1]=[0,1)\cup\{1\}.$
+\end{example}
+
+\begin{example}
+Consider the subset $X=\{(x,y)\in\mathbb{R}^2: -1<x<1$ \mbox{ and } $y\geq0\}.$ $$\partial X=\{-1,1\}\times[0,\infty)$$ this follows because every point in the positive part of the lines $x=-1$ and $x=1$ are boundary points. 
+
+Therefore $\overline{X}=[-1,1]\times[0,\infty)=\{(x,y)\in\mathbb{R}^2: -1\leq x\leq 1 \mbox{ and } y\geq 0\}.$
+\end{example}
+
+\begin{example}
+Consider the subset $X=\{(x,y)\in\mathbb{R}^2: x\geq 0, y\geq 0\}\setminus \bigcup_{n\in\mathbb{N}} \{1/n\}\times (0,\infty).$ The boundary of $X$ contains the rays $\{0\}\times[0,\infty),$ $ [0,\infty)\times\{0\}$ and every $\{1/n\}\times (0,\infty).$ Therefore $$\partial X = \{0\}\times[0,\infty)\cup  [0,\infty)\times\{0\}\cup \bigcup_{n\in \mathbb{N}} \{1/n\}\times (0,\infty).$$
+
+Therefore, $\overline{X}=[0,\infty)\times[0,\infty).$
+\end{example}
 
 \subsection{Compact Sets}
 
@@ -1591,6 +1640,45 @@ The group $\mathcal{C}^p$ is called the \emph{p-th chain group}.
 \end{definition}
 
 \subsection{Boundaries and Cycles}
+
+There is a way to relate chains in different dimensions using the so called the boundary operator. Given a $p-$simplex $\sigma=\{v_0,v_1,\cdots, v_p\}$ (also denoted by $v_0v_1\cdots v_p)$ we construct the chain $$\partial_p \sigma =\sum_{j=0}^p \{v_0,\cdots,\hat{v_i},\cdots,v_p\}$$ where $\hat{v_i}$ means that the vertex $v_i$ is omitted. Naively, we can think that $\partial_p$ assigns to each $p-$simplex to the $(p-1)-$chains that is made of all of its $(p-1)-$faces.
+
+\begin{example}
+Consider the $2-$simplex $\sigma=\{v_1,v_2,v_3\}=v_1v_2v_3,$ therefore $$\partial_1 \sigma=\{v_1,v_2\}+\{v_2,v_3\}+\{v_3,v_1\}.$$ In the geometric realization of $\sigma,$ $\partial_2\sigma$ correspond to the boundary as a subset of a metric space.
+
+\begin{figure}[h]
+\begin{tikzpicture}
+\filldraw[fill=black!30!white] (0,0)--(3,0)--(0,3)--(0,0);
+\draw (0,0)--(3,0) node [below, pos=0.5]{$\{v_1,v_2\}$}
+(3,0)--(0,3) node[right,pos=0.5]{$\{v_2,v_3\}$}
+(0,3)--(0,0) node[left,pos=0.5]{$\{v_3,v_1\}$};
+\node at (0.9,1) {$\{v_1,v_2,v_3\}$};
+\end{tikzpicture}
+\end{figure}
+\end{example}
+
+In the special case of $p=0$ we define that the boundary operator $\partial_0 c=0=\sum_{j=1}^{m_p}0\sigma_j.$ for any $0-$chain.
+How does the boundary operator operate on a general $p-$chain? Well, we apply the boundary operator to each $p-$simplex that belongs to the chain and then we sum the resulting boundaries to obtain the result.
+
+\begin{example}
+Consider the $2-$chain $k=\{v_1,v_2,v_3\}+\{v_2,v_4,v_3\}.$ Then $$\partial_1 k=\partial_1 \{v_1,v_2,v_3\} +\partial_1 \{v_1,v_4,v_3\}$$
+$$=\{v_1,v_2\}+\{v_2,v_3\}+\{v_3,v_1\}+\{v_2,v_4\}+\{v_4,v_3\}+\{v_3,v_2\}$$
+$$=\{v_1,v_2\}+\{v_3,v_1\}+\{v_2,v_4\}+\{v_4,v_3\}.$$
+
+In the geometric realization of $k,$ we have that $k$ is a square composed of two triangles that share a common side. The boundary of $k$ is the sides of the square.
+\end{example}
+
+
+An important feature of the boundary operator is that applying it twice produces an empty chain.
+
+\begin{proposition}
+For $p>0$ and any $p-$chain we have $$\partial_{p-1}\circ\partial_p (c)=0.$$
+\end{proposition}
+\begin{proof}
+Observe that for a $k-$complex, then $\partial_p$ acts as the zero element if $p>k$ by definition. Then it suffices to show that, for $1\leq p\leq k$ we have that $\partial_{p-1}\circ\partial_p=0$ for a $p-$simplex $\sigma.$
+
+The last affirmation follows from the fact that $\partial_p\sigma$  is the set of all $(p-1)-$faces of $\sigma$ and every $(p-2)-$faces of $\sigma$ is contained in exactly two $(p-1)-$faces. Thus, $\partial_{p-1}(\partial_p \sigma)=0.$
+\end{proof}
 
 
 %

@@ -16,9 +16,15 @@
 
 % Load the package for hyper references
 \usepackage{kaorefs}
+\usepackage[all]{xy}
 
 \graphicspath{{images/}{./}} % Paths where images are looked for
 
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\im}{Im}
 %\makeindex[columns=3, title=Alphabetical Index, intoc]
 \begin{document}
 
@@ -1679,6 +1685,129 @@ Observe that for a $k-$complex, then $\partial_p$ acts as the zero element if $p
 
 The last affirmation follows from the fact that $\partial_p\sigma$  is the set of all $(p-1)-$faces of $\sigma$ and every $(p-2)-$faces of $\sigma$ is contained in exactly two $(p-1)-$faces. Thus, $\partial_{p-1}(\partial_p \sigma)=0.$
 \end{proof}
+
+We can construct something that in homology theory is called a \emph{chain complex}, which intuitively is an iterative composition of the boundary maps in different degrees:
+
+\begin{equation}
+\xymatrix{
+0=\mathcal{C}^{k+1}\ar[r]^{\partial_{k+1}}& \mathcal{C}^k\ar[r]^{\partial_k} & \mathcal{C}^{k-1}\ar[r]^{\partial_{k-1}} & \cdots \ar[r] & \mathcal{C}^1 \ar[r]^{\partial_1} & \mathcal{C}^0 \ar[r]^{\partial_0} & \mathcal{C}_{-1}=0
+}
+\end{equation}
+
+Since $\mathcal{C}^p$ and $\mathcal{C}^{p-1}$ are vector fields, we can compute the matrix associated with the boundary operator $\partial_p.$
+
+\begin{example}
+    Consider the simplicial complex $K=\{a,b,c,d, ab, bc, ca, ad, abc\}.$ We have that $\mathcal{C}^0=\langle a,b,c,d\rangle$ and $\mathcal{C}^1=\langle ab,bc,ca,ad\rangle.$ Now we will compute the image of the basic elements of $\mathcal{C}^1$ under $\partial_1:$
+    \begin{itemize}
+        \item $\partial_1(ab)=a+b.$
+        \item $\partial_1(bc)=b+c.$
+        \item $\partial_1(ca)=c+a.$
+        \item $\partial_1(ad)=a+d.$
+    \end{itemize}
+    The matrix of $\partial_1$ is $$\partial_1=\left(\begin{array}{cccc} 
+    1 & 0 & 1 & 1 \\
+    1 & 1 & 0 & 0 \\
+    0 & 1 & 1 & 0 \\
+    0 & 0 & 0 & 1
+    \end{array}\right).$$
+
+    Note that $ab+bc$ has boundary $a+c,$ the corresponding vector to $ab+bc$ is $$(1,1,0,0)^t$$ and $$\partial_1(ab+bc)=\left(\begin{array}{cccc} 
+    1 & 0 & 1 & 1 \\
+    1 & 1 & 0 & 0 \\
+    0 & 1 & 1 & 0 \\
+    0 & 0 & 0 & 1
+    \end{array}\right)\left(\begin{array}{c} 1 \\ 1\\ 0 \\ 0\end{array}\right)=\left(\begin{array}{c} 1 \\ 2 \\ 1 \\ 0 \end{array}\right)=a+2b+c=a+c.$$
+    Recall that we are in $\Z_2$ and for this reason the $2b=0b.$ 
+\end{example}
+
+\begin{definition}
+    A $p-$chain $c$ is a $p-$cycle if $\partial c=0.$ The group of all $p-$cycles is called the $p-$th cycle group $Z_p.$ 
+\end{definition}
+
+In other words, a chain that has an empty boundary is a cycle, and note that $\ker \partial_p= Z_p.$
+
+\begin{example}
+    For the simplicial complex $K=\{a,b,c,d, ab, bc, ca, ad, abc\}$ the chain $ab+bc+ca$ is a cycle.
+\end{example}
+
+Note that in the previous example, the $1-$cycle is the boundary of the $2-$simplex $abc,$ but this is not always the case, in the next example we construct some cycles that are not boundaries of $2-$simplices.
+\begin{example}
+    Let $K=\{a,b,c,d,e,f, ab, bc, ca, cd, de, ec, ef, fa, ae, abc, cde, aef\}.$ The chains $ab+bc+cd+de+ef+fa,$ $ac+ce+ea$ and $ab+bc+ca+af+fe+ea$ are examples of $1-cycles.$ See figure \ref{C2:fig:BoundaryEquivalence} to observe the cycles.
+\end{example}
+
+\begin{definition}
+    The set of $(p-1)-$chains that can be obtained by applying the boundary operator $\partial_p$ is called the \emph{boundary group} $B_{p-1}.$
+\end{definition}
+
+\begin{remark}
+    Note that $B_{p-1}$ is precisely the image of the operator $\partial_p$ in $\mathcal{C}^p,$ \emph{i.e.,} $B_{p-1}=\partial_p(\mathcal{C}^p).$ Also, $\partial_{p-1}(B_{p-1})=0$ and $B_{p-1}\subseteq Z_{p-1}.$
+\end{remark}
+
+Since $\mathcal{C}^p$ is a vector space, then set $B_p$ and $Z_p$ are also vector spaces.
+
+
+\subsection{Homology}
+
+Homology groups (or vector spaces in this particular case) are used to classify cycles in the cycle group by grouping together those that differ by a boundary.
+
+\begin{definition}{Homology Groups}
+    For $p\geq 0,$ the $p-$th \emph{homology group} is the quotient group $$H_p=\,^{Z_p}/_{B_p}.$$ From the fact that $\Z_2$ are the coefficients, $H_p$ is a vector space and its dimension is called the $p-$th \emph{Betti number,} denoted by $\beta_p.$
+\end{definition}
+
+Note that $H_p$ is a quotient space of the space $Z_p$ with the equivalence relation $$c_1+c_2\in B_p$$ for any pair of cycles $c_1,c_2.$
+
+\begin{remark}
+    From the fact that $Z_p,\, B_p$ and $H_p$ are vector spaces we have that $$\beta_p=\dim(H_p)=\dim(Z_p)-\dim(B_p)$$ but recall that $Z_p=\ker(\partial_p)$ and $B_p=\im(\partial_{p+1}).$ The dimensions of $\ker$ and $\im$ of a linear operator it is easily computed from its matrix form.
+\end{remark}
+
+\begin{example}
+    Let $K=\{a,b,c,d,e,f, ab, bc, ca, cd, de, ec, ef, fa, ae, abc, cde, afe\}.$ Consider the 1-cycles $\sigma_1=ab+bc+cd+de+ef+fa$ y $\sigma_2=ca+ae+ec$ and the 2-cycle $\omega=abc+cde+aef.$ Note that $\sigma_1+\sigma_2$ equals to $\partial_2(\omega).$ Therefore $\sigma_1$ and $\sigma_2$ are related.
+    In figure \ref{C2:fig:BoundaryEquivalence}, we can see both 1-cycles that bound the 2-cycle $\omega.$
+    \begin{figure}[H]
+        \centering
+        \includegraphics{boundaryequivalence.png}
+        \caption{In green cycle $\sigma_1,$ in purple cycle $\sigma_2$, and in red cycle $\omega$.}
+        \label{C2:fig:BoundaryEquivalence}
+    \end{figure}
+\end{example}
+
+\begin{example}
+    Let us compute the Homology groups for the simplicial complex $K$ of the previous example. Note that $K$ is a 2-simplicial complex, therefore $\mathcal{C}^p=0$ for $p\geq 3.$
+
+    For $H_3,$ $\mathcal{C}^3=0,$ so $\partial_3:\mathcal{C}^3\to\mathcal{C}^2$ has image $0$ and kernel $0,$ so $\dim(\im(\partial_3))=0$ and $\dim(\ker(\partial_3))=0.$
+    
+    For $H_2,$ the 2-chain vector space is generated by $\langle abc, cde, efa\rangle$ and the 1-chain vector space is generated by $$\langle ab, bc, cd, de, ef, fa, ac, ce, ea\rangle$$, the $\partial_2$ matrix is given by $$\partial_2=\left(\begin{array}{ccc} 1 & 0 & 0 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 1 & 0 \\ 0& 0 & 1 \\ 0 & 0 & 1 \\ 0 & 0 & 1\end{array}\right)\sim \left(\begin{array}{ccc} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0& 0 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{array}\right)$$
+    We obtained the second matrix after doing row reduction in $\Z_2.$ Since the matrix has rank 3, $\dim(\im(\partial_2))=3$ y $\dim(\ker(\partial_2))=0.$
+
+    For $H_1,$ $\mathcal{C}^0=\langle a,b,c,d,e,f\rangle$ and $$\partial_1=\left(\begin{array}{ccccccccc} 
+    1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 \\
+    1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 1 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1
+    \end{array}\right)\sim \left(\begin{array}{ccccccccc} 
+    1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 \\
+    0 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 \\
+    0 & 0 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\
+    0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 \\
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+    \end{array}\right)$$ whose rank is 5, therefore $\dim(\ker(\partial_1))=4$ and $\dim(\im(\partial_1))=5.$
+
+    Finally, $\partial_0:\mathcal{C}^0\to\mathcal{C}^{-1}$ sends the whole $\mathcal{C}^0$ to $0,$ so $\dim(\ker(\partial_0))=6.$
+
+    Therefore, the Betti numbers for $K$ are 
+    \begin{eqnarray*}
+        \beta_2 = \dim(\ker(\partial_2))-\dim(\im(\partial_3))=0-0=0, \\
+        \beta_1 = \dim(\ker(\partial_1))-\dim(\im(\partial_2))=4-3=1,\\
+        \beta_0 = \dim(\ker(\partial_0))-\dim(\im(\partial_1))=6-5=1.
+    \end{eqnarray*}
+    Since, $K$ is a 2-simplicial complex, $\beta_p=0$ for $p\geq 3.$
+\end{example}
+
+\subsection{Singular Homology}
+
 
 
 %
